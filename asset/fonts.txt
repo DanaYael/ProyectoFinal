@@ -1,0 +1,55 @@
+<!-- ---Titulos para pagina principal --- -->
+
+Titulos de categotias ej :(PELICULAS TOP 10 )
+font-family:
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gupter:wght@400;500;700&family=Montserrat:ital,wght@0,600;1,600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+PE:wght@100..400&family=Rubik+Dirt&display=swap');
+</style>
+
+Móviles (320px - 768px)
+Breakpoint BOOSTRAP Extra small <576px | Small sm ≥576px:
+Font-size: 14px
+Line-height: 1.3
+
+Tablets (768px - 1024px)
+Breakpoint BOOSTRAP Medium md ≥768px :
+Font-size: 16px
+Line-height: 1.4
+
+Pantallas grandes (desktops y laptops)
+Breakpoint BOOSTRAP Large lg ≥992px :
+Font-size: 18px
+Line-height: 1.6
+
+Pantallas Muy grandes
+Breakpoint BOOSTRAP Extra large xl ≥1200px :
+Font-size: 24px
+Line-height: 1.8
+
+<!-- ---Titulos para pag modal ( ver mas informacion) --- -->
+
+Titulos que destaquen otra seccion
+font-size:24px
+
+<!-- ---Parrafos--- -->
+
+Parrafos
+font-size:14px
+font-family:
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gupter:wght@400;500;700&family=Montserrat:ital,wght@0,600;1,600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+PE:wght@100..400&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Rubik+Dirt&display=swap');
+</style>
+
+<!-- ---Banners--- -->
+
+Banners o títulos especiales Grandes
+font-size:26-28px
+font-family:
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Gupter:wght@400;500;700&family=Montserrat:ital,wght@0,600;1,600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+PE:wght@100..400&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Rubik+Dirt&display=swap');
+</style>
+
+

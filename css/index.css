@@ -1,0 +1,19 @@
+:root {
+  /* Fuentes */
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-bebas-neue: "Bebas Neue", sans-serif;
+
+  /* Colores */
+  --color-white: #ffffff;
+  --color-grey: #4a4a4a;
+  --bg-red: #e50914;
+  --bg-primary: #080808; /* bg de pag principal */
+  --bg-secondary: #181818; /* bg de modales , botones*/
+
+  /* Tamaños de fuente */
+  --font-size-large: 28px;
+  --font-size-medium: 24px;
+  --font-size-small: 16px;
+  --font-size-description: 14px;
+}

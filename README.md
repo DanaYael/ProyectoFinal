@@ -32,4 +32,4 @@ Haz un fork del repositorio. Crea una rama con la característica o corrección 
 
 PARA CONTACTARNOS Para preguntas o comentarios, puedes contactarnos en:
 
-Email: support@myflix.com GitHub: FlixGo
+Email: support@flixGo.com GitHub: FlixGo
