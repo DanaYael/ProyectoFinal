@@ -1,6 +1,6 @@
 DESCRIPSION DEL PROYECTO
 
-MyFlix Es una plataforma de streaming de video que permite a los usuarios ver series, películas y documentales desde cualquier dispositivo con conexión a internet. Inspirado en Netflix, este proyecto está diseñado para ofrecer una experiencia de usuario fluida y atractiva, con recomendaciones personalizadas, listas de favoritos, y mucho más.
+FlixGo Es una plataforma de streaming de video que permite a los usuarios ver series, películas y documentales desde cualquier dispositivo con conexión a internet. Inspirado en Netflix, este proyecto está diseñado para ofrecer una experiencia de usuario fluida y atractiva, con recomendaciones personalizadas, listas de favoritos, y mucho más.
 
 CARACTERISTICAS
 
@@ -20,7 +20,7 @@ Html , Css , Git , GitHub , Kanban
 
 CLONACION DEL REPOCITORIO
 
-git clone https://github.com/tuusuario/myflix.git
+git clone https://github.com/tuusuario/flixGo.git
 
 USO
 
@@ -32,4 +32,4 @@ Haz un fork del repositorio. Crea una rama con la característica o corrección 
 
 PARA CONTACTARNOS Para preguntas o comentarios, puedes contactarnos en:
 
-Email: support@myflix.com GitHub: MyFlix
+Email: support@myflix.com GitHub: FlixGo
