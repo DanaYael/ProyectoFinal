@@ -15,6 +15,7 @@
     <meta name="copyright" content="© 2024 FEP" />
     <title>Página Principal - FlixGo</title>
     <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/home-page.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -23,12 +24,13 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="body-home-page">
     <header>
       <section class="navbar-home-page">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!-- Se cambio nombre de clase y se borro navbar -->
+        <nav class="navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#"><img src="" alt="Logo" /></a>
             <button
               class="navbar-toggler"
               type="button"
@@ -44,11 +46,13 @@
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
+                    >Inicio</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Recomendadas</a
+                  >
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -58,52 +62,73 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Dropdown
+                    Categorías
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Top 10</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Acción y Aventuras</a>
                     </li>
-                    <li><hr class="dropdown-divider" /></li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="#">Terror y Suspenso</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Infantiles</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Documentales</a>
                     </li>
                   </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                 </li>
               </ul>
               <form class="d-flex" role="search">
                 <input
                   class="form-control me-2"
                   type="search"
-                  placeholder="Search"
+                  placeholder="Buscar"
                   aria-label="Search"
                 />
                 <button class="btn btn-outline-success" type="submit">
-                  Search
+                  Buscar
                 </button>
               </form>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Cerrar Sesión</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </nav>
       </section>
     </header>
-    <main>
+    <main class="main-home-page">
       <!-- INICIO CAROUSEL -->
       <section class="carrousel-home-page">
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="..." class="d-block w-100" alt="..." />
+              <img
+                src="https://picsum.photos/200/300?random=1"
+                class="d-block w-100 img-cover"
+                alt=""
+              />
             </div>
             <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="..." />
+              <img
+                src="https://picsum.photos/200/300?random=2"
+                class="d-block w-100 img-cover"
+                alt=""
+              />
             </div>
             <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="..." />
+              <img
+                src="https://picsum.photos/200/300?random=3"
+                class="d-block w-100 img-cover"
+                alt=""
+              />
             </div>
           </div>
           <button
@@ -126,9 +151,52 @@
           </button>
         </div>
       </section>
+
       <!-- FIN CAROUSEL -->
       <!-- INICIO CARDS -->
-      <h4 class="card-title">Recomendadas</h4>
+      <h4 class="card-title ps-4 pb-3 ps-4 pb-3">Recomendadas</h4>
+      <section class="cards-home-pages">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="" class="card-img-top" alt="" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="" class="card-img-top" alt="" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="" class="card-img-top" alt="" />
+            </div>
+          </div>
+        </div>
+        <div><button>Explorar todos</button></div>
+      </section>
+      <h4 class="card-title ps-4 pb-3 ps-4 pb-3">Top 10 Películas y Series</h4>
+      <section class="cards-home-pages">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="" class="card-img-top" alt="" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="" class="card-img-top" alt="" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="" class="card-img-top" alt="" />
+            </div>
+          </div>
+        </div>
+        <div><button>Explorar todos</button></div>
+      </section>
+      <h4 class="card-title ps-4 pb-3 ps-4 pb-3">Acción y Aventuras</h4>
       <section class="cards-home-pages">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
@@ -149,7 +217,7 @@
         </div>
         <div><button>Explorar todos</button></div>
       </section>
-      <h4 class="card-title">Top 10 Películas y Series</h4>
+      <h4 class="card-title ps-4 pb-3">Terror y Suspenso</h4>
       <section class="cards-home-pages">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
@@ -170,7 +238,7 @@
         </div>
         <div><button>Explorar todos</button></div>
       </section>
-      <h4 class="card-title">Acción y Aventuras</h4>
+      <h4 class="card-title ps-4 pb-3">Infantiles</h4>
       <section class="cards-home-pages">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
@@ -191,49 +259,7 @@
         </div>
         <div><button>Explorar todos</button></div>
       </section>
-      <h4 class="card-title">Terror y Suspenso</h4>
-      <section class="cards-home-pages">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-            </div>
-          </div>
-        </div>
-        <div><button>Explorar todos</button></div>
-      </section>
-      <h4 class="card-title">Infantiles</h4>
-      <section class="cards-home-pages">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-            </div>
-          </div>
-        </div>
-        <div><button>Explorar todos</button></div>
-      </section>
-      <h4 class="card-title">Documentales</h4>
+      <h4 class="card-title ps-4 pb-3">Documentales</h4>
       <section class="cards-home-pages">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
@@ -256,7 +282,7 @@
       </section>
       <!-- FIN CARDS -->
     </main>
-    <footer>
+    <footer class="footer-home-page">
       <section>
         <div>
           <ul>

@@ -2,3 +2,59 @@
   margin: 0;
   padding: 0;
 }
+
+.body-home-page {
+  background-color: var(--bg-primary);
+}
+
+/* ESTILOS NAVBAR */
+
+.container-fluid {
+  font-family: var(--font-roboto);
+  font-size: var(--font-size-medium);
+  color: var(--color-white);
+}
+
+/* ESTILOS CARROUSEL */
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 90vh; /* Ajusta según sea necesario */
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ESTILOS DE TARJETAS */
+
+.main-home-page .card-title {
+  font-family: var(--font-bebas-neue);
+  font-size: var(--font-size-large);
+  font-weight: 500;
+  color: var(--color-white);
+  margin: 20px;
+}
+
+.main-home-page .cards-home-pages .col .card {
+  border: none;
+  overflow: hidden;
+  width: 350px;
+}
+
+.main-home-page .cards-home-pages .col .card .card-img-top {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.footer-home-page {
+  background-color: var(--bg-primary);
+}
