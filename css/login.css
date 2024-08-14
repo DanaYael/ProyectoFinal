@@ -1,0 +1,170 @@
+:root {
+  /* Fuentes */
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-bebas-neue: "Bebas Neue", sans-serif;
+
+  /* Colores */
+  --color-white: #ffffff;
+  --color-grey: #4a4a4a;
+  --bg-red: #e50914;
+  --bg-primary: #080808; /* bg de pag principal */
+  --bg-secondary: #181818; /* bg de modales , botones*/
+
+  /* Tamaños de fuente */
+  --font-size-large: 28px;
+  --font-size-medium: 24px;
+  --font-size-small: 16px;
+  --font-size-description: 14px;
+}
+
+main,
+body,
+html {
+  width: 100%;
+  height: 100%;
+
+  .card-diapositiva {
+    padding: 70px;
+    box-shadow: 0px 0px 10px 0px #848383;
+    width: 100%;
+    height: 100vh;
+
+    .card-title {
+      font-family: --font-montserrat;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .card-text {
+      font-family: var(--font-bebas-neue);
+    }
+
+    .div-icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      color: #e50914;
+      gap: 50px;
+    }
+
+    .icons {
+      font-size: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: #e50914;
+    }
+
+    .p-paso {
+      font-size: 14px;
+    }
+  }
+
+  .card-diapositiva5 {
+    padding: 70px;
+    box-shadow: 0px 0px 10px 0px #848383;
+    width: 100%;
+  }
+
+  .icon-formulario {
+    color: var(--bg-red);
+    font-size: 16px;
+  }
+
+  .btn-red {
+    background: var(--bg-red);
+    color: var(--color-white);
+    font-family: var(--font-roboto);
+    padding: 10px 80px;
+    transition: 0.2s all ease-in-out;
+  }
+
+  .btn-red:hover {
+    background: var(--bg-secondary);
+    color: var(--bg-red);
+  }
+
+  .parrafo {
+    width: 100%;
+    margin-top: 30px;
+    text-indent: 20px;
+    color: rgb(87, 86, 86);
+  }
+
+  .container-metodo-pago {
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    align-items: start;
+    border: 1px solid gray;
+    width: 100%;
+  }
+
+  .img-tarjetas {
+    background: #ffffff;
+    width: 120px;
+    height: 30px;
+  }
+  .container-pago {
+    border: none;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .btn-tarjetas {
+    background: white;
+    color: black;
+    border: 1px solid #4a4a4a;
+    margin: 10px;
+    padding: 10px 90px;
+    transition: 0.1s all ease-in;
+  }
+
+  .btn-tarjetas:hover {
+    background: var(--bg-red);
+    color: var(--color-white);
+    border-radius: 10px;
+  }
+
+  .div-btn-modal {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* media query */
+
+@media screen and (max-width: 576px) {
+  .card-diapositiva5.text-center.justify-content-center {
+    padding: 30px;
+  }
+
+  .div-icons {
+    font-size: 50px;
+  }
+
+  .div-btn-modal .btn-red {
+    padding: 5px 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .div-icons {
+    font-size: 100px;
+  }
+
+  .container-metodo-pago {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container-pago .container-metodo-pago {
+    width: 80%;
+  }
+}

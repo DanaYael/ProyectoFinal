@@ -4,6 +4,558 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators mb-5">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="6"
+            aria-label="Slide 7"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- Diapositiva 1 -->
+          <div class="carousel-item active">
+            <div class="container d-flex justify-content-center">
+              <div class="card-diapositiva text-center justify-content-center">
+                <p class="p-paso">PASO 1 DE 4</p>
+                <div class="div-icons my-5">
+                  <i class="bi bi-phone"></i>
+                  <i class="bi bi-laptop"></i>
+                  <i class="bi bi-tv"></i>
+                </div>
+                <h5 class="card-title my-3 fs-3 mb-5">
+                  Termine de configurar su cuenta
+                </h5>
+                <p class="card-text my-3 mb-5">
+                  FlixGO es totalmente personalizada para vos. <br />
+                  Crea una contraseña y comenza a ver tus series y peliculas
+                  favoritas!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Diapositiva 2 -->
+          <div class="carousel-item">
+            <div class="container d-flex justify-content-center">
+              <div class="card-diapositiva text-center justify-content-center">
+                <p class="p-paso">PASO 2 DE 4</p>
+                <h5 class="card-title my-5 fs-3">
+                  Crea una contraseña para iniciar tu registro
+                </h5>
+                <p class="texto-p mb-5">Solo faltan algunos pasos mas!</p>
+                <div
+                  class="formulario mx-auto d-flex-column justify-content-center"
+                >
+                  <div class="form-floating mb-3 ">
+                    <input
+                      type="email"
+                      class="form-control w-80"
+                      id="floatingInput"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInput"
+                      >Email <i class="bi bi-envelope icon-formulario"></i>
+                    </label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="password"
+                      class="form-control w-80"
+                      id="floatingPassword"
+                      placeholder="Password"
+                    />
+                    <label for="floatingPassword"
+                      >Contraseña
+                      <i class="bi bi-person-lock icon-formulario"></i>
+                    </label>
+                  </div>
+                  <div class="form-floating">
+                    <input
+                      type="password"
+                      class="form-control w-80"
+                      id="floatingPassword"
+                      placeholder="Password"
+                    />
+                    <label for="floatingPassword"
+                      >Repetir Contraseña
+                      <i class="bi bi-person-fill-lock icon-formulario"></i
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Diapositiva 3 -->
+          <div class="carousel-item">
+            <div class="container d-flex justify-content-center">
+              <div class="card-diapositiva text-center justify-content-center">
+                <p class="p-paso mt-5">PASO 2 DE 4</p>
+                <div class="card-body">
+                  <h5 class="card-title my-5 fs-3">
+                    Genial! ahora vamos a verificar su email
+                  </h5>
+                  <p class="card-text my-5">
+                    Para confirmar haga click en el link que enviamos a <br />
+                    <b>su.mail24@gmail.com</b>
+                  </p>
+                  <p class="card-text my-5">
+                    La verificacion de su email aumenta la seguridad de la su
+                    cuenta <br />
+                    y ayuda a recibir informacion importante de FlixGO.
+                  </p>
+                  <a href="#" class="btn btn-red">Salar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Diapositiva 4 -->
+          <div class="carousel-item">
+            <div class="container d-flex justify-content-center">
+              <div class="card-diapositiva text-center justify-content-center">
+                <p class="p-paso mt-5">PASO 3 DE 4</p>
+                <i class="bi bi-check-circle fs-1 icon-formulario"></i>
+                <div class="card-body">
+                  <h5 class="card-title mt-5 fs-3">Escoja su plan</h5>
+                  <p class="card-text my-5">
+                    <i class="bi bi-check-lg fs-3 icon-formulario"></i>
+                    Cancelacion sin commpromiso Cancele cuando quiera.
+                  </p>
+                  <p class="card-text my-5">
+                    <i class="bi bi-check-lg fs-3 icon-formulario"></i>
+                    Entretenimiento sin fin por un precio bajo.
+                  </p>
+                  <p class="card-text my-5">
+                    <i class="bi bi-check-lg fs-3 icon-formulario"></i>
+                    Divertite con FlixGO en todos tus dispositivos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Diapositiva 5 -->
+          <div class="carousel-item">
+            <div class="container d-flex justify-content-center">
+              <div class="card-diapositiva5 text-center justify-content-center">
+                <p class="p-paso my-5">PASO 3 DE 4</p>
+                <h5 class="card-title mb-5 fs-3">
+                  Elegi el plan que mas te guste
+                  <i class="bi bi-emoji-smile icon-formulario fs-3"></i>
+                </h5>
+                <!-- plan BASICO -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <!-- Plan Básico con anuncios -->
+                  <div class="col-12 col-md-6 col-lg-4 card-planes">
+                    <div class="card card-planes p-4">
+                      <div class="card-body mb-4">
+                        <h5 class="card-title">Básico con anuncios</h5>
+                        <div class="row">Precio por mes</div>
+                        <div class="row">$4299</div>
+                        <hr />
+                        <div class="row">Calidad de video y audio</div>
+                        <div class="row">Bueno</div>
+                        <hr />
+                        <div class="row">Resolución</div>
+                        <div class="row">1080p (Full HD)</div>
+                        <hr />
+                        <div class="row">Anuncios</div>
+                        <div class="row">Menos de lo que usted piensa</div>
+                        <hr />
+                        <div class="row">Dispositivos compatibles</div>
+                        <div class="row">TV, computadora, tablet, móvil</div>
+                        <hr />
+                        <div class="row">
+                          Dispositivos conectados al mismo tiempo
+                        </div>
+                        <div class="row">2</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Plan Standard -->
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card p-4">
+                      <div class="card-body mb-4">
+                        <h5 class="card-title">Standard</h5>
+                        <div class="row">Precio por mes</div>
+                        <div class="row">$7199</div>
+                        <hr />
+                        <div class="row">Calidad de video y audio</div>
+                        <div class="row">Excelente</div>
+                        <hr />
+                        <div class="row">Resolución</div>
+                        <div class="row">1080p (Full HD)</div>
+                        <hr />
+                        <div class="row">Anuncios</div>
+                        <div class="row">Sin anuncios</div>
+                        <hr />
+                        <div class="row">Dispositivos compatibles</div>
+                        <div class="row">TV, computadora, tablet, móvil</div>
+                        <hr />
+                        <div class="row">
+                          Dispositivos conectados al mismo tiempo
+                        </div>
+                        <div class="row">3</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Plan Premium -->
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card p-4">
+                      <div class="card-body mb-4">
+                        <h5 class="card-title">Premium</h5>
+                        <div class="row">Precio por mes</div>
+                        <div class="row">$9699</div>
+                        <hr />
+                        <div class="row">Calidad de video y audio</div>
+                        <div class="row">Superior</div>
+                        <hr />
+                        <div class="row">Resolución</div>
+                        <div class="row">4K + HDR</div>
+                        <hr />
+                        <div class="row">Anuncios</div>
+                        <div class="row">Sin anuncios</div>
+                        <hr />
+                        <div class="row">Dispositivos compatibles</div>
+                        <div class="row">TV, computadora, tablet, móvil</div>
+                        <hr />
+                        <div class="row">
+                          Dispositivos conectados al mismo tiempo
+                        </div>
+                        <div class="row">4</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 col-lg-12">
+                    <p class="parrafo">
+                      Obtenga más información sobre el plan con publicidad. Al
+                      seleccionar un plan con publicidad, se le pedirá que
+                      proporcione su fecha de nacimiento para personalizar los
+                      anuncios y otros fines consistentes con la Declaración de
+                      Privacidad de flixGO. La disponibilidad de las opciones
+                      Full HD (1080p), Ultra HD (4K) y HDR está sujeta al
+                      servicio de Internet y a las capacidades de su
+                      dispositivo. No todo el contenido está disponible en todas
+                      las resoluciones. Para obtener más detalles, consulte los
+                      <a href="Terminos-de-uso">Terminos de uso</a>. Sólo las
+                      personas que viven contigo pueden utilizar tu cuenta.
+                      Agrega 1 suscriptor adicional con el plan Estándar o hasta
+                      2 con el plan Premium. Descubra más. Míralo en 4
+                      dispositivos al mismo tiempo con el plan Premium y en 2
+                      dispositivos con el plan Estándar o Estándar con anuncios.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Diapositiva 6 -->
+          <div class="carousel-item">
+            <div class="container d-flex justify-content-center">
+              <div class="card-diapositiva5 text-center justify-content-center">
+                <p class="p-paso mt-5">PASO 4 DE 4</p>
+                <i class="bi bi-currency-dollar fs-1 icon-formulario"></i>
+                <div class="card-body mb-5">
+                  <h5 class="card-title mt-5 fs-3">Escoja metodo de pago</h5>
+                  <p class="card-text my-2">
+                    Su forma de pago esta encriptada y puede cambiarlo cuando
+                    quiera.
+                  </p>
+                  <p class="card-text my-5">
+                    <b
+                      >Seguridad y tranquilidad. <br />
+                      Cancele en línea con facilidad.
+                    </b>
+                  </p>
+                  <div class="container pago">
+                    <div
+                      class="row container-metodo-pago d-flex"
+                      data-bs-toggle="modal"
+                      data-bs-target="#tarjetaCreditoModal"
+                    >
+                      Tarjeta de credito o debito
+                      <img
+                        class="img-tarjetas"
+                        src="https://e7.pngegg.com/pngimages/679/550/png-clipart-mastercard-discover-card-payment-american-express-visa-visa-master-card-text-logo.png"
+                        alt="imagen tarjetas"
+                      />
+                    </div>
+                    <div
+                      class="row container-metodo-pago d-flex"
+                      data-bs-toggle="modal"
+                      data-bs-target="#CodigoTarjetaModal"
+                    >
+                      Codigo de tarjeta prepago
+                      <img
+                        class="img-tarjetas"
+                        src="/asset/logo-imgenes/logo2.png"
+                        alt="logo"
+                      />
+                    </div>
+                    <!-- Modal 1 -->
+                    <div
+                      class="modal fade"
+                      id="tarjetaCreditoModal"
+                      tabindex="-1"
+                      aria-labelledby="tarjetaCreditoModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5
+                              class="modal-title"
+                              id="tarjetaCreditoModalLabel"
+                            >
+                              Información de su tarjeta de crédito o débito
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="card-body mb-5">
+                              <h5 class="card-title mt-5 fs-3">
+                                Información de su tarjeta de crédito o débito
+                              </h5>
+                              <div class="container pago">
+                                <img
+                                  class="img-tarjetas my-4"
+                                  src="https://e7.pngegg.com/pngimages/679/550/png-clipart-mastercard-discover-card-payment-american-express-visa-visa-master-card-text-logo.png"
+                                  alt="imagen tarjetas"
+                                />
+                                <div class="row container-pago d-flex">
+                                  <div class="form-floating mb-3">
+                                    <input
+                                      type="tel"
+                                      class="form-control"
+                                      id="floatingInput"
+                                      placeholder="Ingrese su número de tarjeta"
+                                    />
+                                    <label for="floatingInput" class="mx-2"
+                                      >Ingrese su número de tarjeta</label
+                                    >
+                                  </div>
+                                  <div class="form-floating mb-3">
+                                    <div class="row">
+                                      <div class="col-6">
+                                        <input
+                                          type="tel"
+                                          class="form-control"
+                                          id="floatingInputFecha"
+                                          placeholder="Fecha de validación"
+                                        />
+                                      </div>
+                                      <div class="col-6">
+                                        <input
+                                          type="tel"
+                                          class="form-control"
+                                          id="floatingInputCVV"
+                                          placeholder="CVV"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-floating mb-3">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="floatingInputNombre"
+                                      placeholder="Escriba su nombre"
+                                    />
+                                    <label
+                                      for="floatingInputNombre"
+                                      class="mx-2"
+                                      >Nombre del titular</label
+                                    >
+                                  </div>
+                                  <!-- --BOTONES-- -->
+                                  <div class="form-floating  mb-3 d-flex justify-content-center">
+                                    <div class="row">
+                                      <div class="d-grid gap-2 d-md-block">
+                                        <button
+                                          class="btn btn-tarjetas"
+                                          type="button"
+                                        >
+                                          Crédito
+                                        </button>
+                                        <button
+                                          class="btn btn-tarjetas"
+                                          type="button"
+                                        >
+                                          Débito
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer  div-btn-modal mb-5">
+                            <button
+                              type="button"
+                              class="btn  btn-red"
+                              data-bs-dismiss="modal"
+                              id="inicio-secion"
+                            >
+                              Iniciar&nbspRegistro
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal 2 -->
+                    <div
+                    class="modal fade"
+                    id="CodigoTarjetaModal"
+                    tabindex="-1"
+                    aria-labelledby="CodigoTarjetaModal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5
+                            class="modal-title"
+                            id="tarjetaCreditoModal"
+                          >
+                            Información de su Codigo de tarjeta prepago
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="card-body mb-5">
+                            <h5 class="card-title mt-5 fs-3">
+                              Información de su tarjeta de crédito o débito
+                            </h5>
+                            <div class="container pago">
+                              <div class="row container-pago d-flex">
+                                <div class="form-floating mb-3 justify-content-center">
+                                  <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="floatingInput"
+                                    placeholder="Ingrese su el codigo"
+                                  />
+                                  <label for="floatingInput" class="mx-2"
+                                    >Ingrese el PIN o codigo </label
+                                  >
+                                </div>
+                                <div class="modal-footer my5 text-center div-btn-modal mb-3" >
+                                  <button 
+                                    type="button"
+                                    class="btn  text-center btn-red "
+                                    data-bs-dismiss="modal"
+                                    id="inicio-secion"
+                                  >
+                                    Iniciar&nbspRegistro
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>     
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
