@@ -99,6 +99,10 @@
                       class="form-control w-80"
                       id="floatingInput"
                       placeholder="name@example.com"
+                      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" 
+                      minlength="6"
+                      maxlength="20"
+                      required>
                     />
                     <label for="floatingInput"
                       >Email <i class="bi bi-envelope icon-formulario"></i>
@@ -110,6 +114,10 @@
                       class="form-control w-80"
                       id="floatingPassword"
                       placeholder="Password"
+                      minlength="8" 
+                      maxlength="40"
+                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" 
+                      required>
                     />
                     <label for="floatingPassword"
                       >Contraseña
@@ -122,6 +130,10 @@
                       class="form-control w-80"
                       id="floatingPassword"
                       placeholder="Password"
+                      minlength="8" 
+                      maxlength="40"
+                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" 
+                      required>
                     />
                     <label for="floatingPassword"
                       >Repetir Contraseña
@@ -149,8 +161,6 @@
                     La verificación de su email aumenta la seguridad de la su
                     cuenta <br />
                     y ayuda a recibir información importante de FlixGO.
-
-
                   </p>
                   <a href="#" class="btn btn-red">Saltar</a>
                 </div>
@@ -268,7 +278,7 @@
                         <div class="row">TV, computadora, tablet, móvil</div>
                         <hr />
                         <div class="row">
-                          Dispositivos conectados al mismo tiempo
+                          Dispositivos conectados al mismo tiempo.
                         </div>
                         <div class="row">4</div>
                       </div>
@@ -377,6 +387,7 @@
                                   src="https://e7.pngegg.com/pngimages/679/550/png-clipart-mastercard-discover-card-payment-american-express-visa-visa-master-card-text-logo.png"
                                   alt="imagen tarjetas"
                                 />
+                                <!-- información de pago -->
                                 <div class="row container-pago d-flex">
                                   <div class="form-floating mb-3">
                                     <input
@@ -384,6 +395,10 @@
                                       class="form-control"
                                       id="floatingInput"
                                       placeholder="Ingrese su número de tarjeta"
+                                      minlength="6"
+                                      maxlength="20"
+                                      pattern="\d{13,19}" 
+                                      required>
                                     />
                                     <label for="floatingInput" class="mx-2"
                                       >Número de tarjeta</label
@@ -393,10 +408,11 @@
                                     <div class="row">
                                       <div class="col-xs-12 col-sm-6 mb-3">
                                         <input
-                                          type="tel"
+                                          type="date"
                                           class="form-control"
                                           id="floatingInputFecha"
                                           placeholder="Fecha de validación"
+                                          required>
                                         />
                                       </div>
                                       <div class="col-xs -12 col-sm-6">
@@ -405,6 +421,8 @@
                                           class="form-control"
                                           id="floatingInputCVV"
                                           placeholder="CVV"
+                                          maxlength="3"
+                                          required>
                                         />
                                       </div>
                                     </div>
@@ -415,6 +433,7 @@
                                       class="form-control"
                                       id="floatingInputNombre"
                                       placeholder="Escriba su nombre"
+                                      required>
                                     />
                                     <label
                                       for="floatingInputNombre"
@@ -495,6 +514,9 @@
                                     class="form-control"
                                     id="floatingInput"
                                     placeholder="Ingrese su el codigo"
+                                    minlength="6"
+                                    maxlength="20"
+                                    required>
                                   />
                                   <label for="floatingInput" class="mx-2"
                                     >Ingrese el PIN o codigo </label
@@ -532,17 +554,7 @@
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleDark"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </main>
-
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

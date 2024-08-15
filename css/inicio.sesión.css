@@ -52,3 +52,15 @@
 .form-control:focus {
   background-color: rgba(128, 128, 128, 0.5);
 }
+
+.btn-suscribite-ya {
+  color: red;
+  margin-top: 28px;
+  padding: 0px 20px;
+  border: 1px solid var(--bg-primary);
+}
+
+.btn-suscribite-ya:hover {
+  color: white;
+  background-color: #080808;
+}

@@ -34,6 +34,10 @@
               class="form-control color-input"
               id="floatingInput"
               placeholder="name@example.com"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              maxlength="20"
+              minlength="6"
+              required
             />
             <label for="floatingInput">Email o nombre de usuario</label>
           </div>
@@ -43,10 +47,15 @@
               class="form-control color-input custom-floating-input"
               id="floatingPassword"
               placeholder="Contraseña"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+              maxlength="40"
+              minlength="6"
+              required
             />
             <label for="floatingPassword">Contraseña</label>
           </div>
-          <div class="container">
+
+          <div class="container mt-3">
             <div class="row">
               <div class="col-6 form-check">
                 <input
@@ -64,9 +73,13 @@
               </div>
             </div>
           </div>
-          <button type="button " class="btn btn-red mt-4">
-            Iniciar Sesión
-          </button>
+          <button type="button" class="btn btn-red mt-5">Iniciar Sesión</button>
+          <div class="div-suscripcion d-flex">
+            <p class="mt-5">¿Primera vez en FlixGO?</p>
+            <a href="login.html" class="btn btn-suscribite-ya mx-5">
+              ¡Suscribite ya!
+            </a>
+          </div>
         </div>
       </div>
     </div>
