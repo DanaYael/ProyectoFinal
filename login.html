@@ -103,7 +103,6 @@
                       minlength="6"
                       maxlength="20"
                       required>
-                    />
                     <label for="floatingInput"
                       >Email <i class="bi bi-envelope icon-formulario"></i>
                     </label>
@@ -118,7 +117,6 @@
                       maxlength="40"
                       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" 
                       required>
-                    />
                     <label for="floatingPassword"
                       >Contraseña
                       <i class="bi bi-person-lock icon-formulario"></i>
@@ -134,11 +132,11 @@
                       maxlength="40"
                       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" 
                       required>
-                    />
                     <label for="floatingPassword"
                       >Repetir Contraseña
                       <i class="bi bi-person-fill-lock icon-formulario"></i
                     ></label>
+                    <a href="#" class="btn btn-red mt-5">Siguiente</a>
                   </div>
                 </div>
               </div>
@@ -165,6 +163,7 @@
                   <a href="#" class="btn btn-red">Saltar</a>
                 </div>
               </div>
+              
             </div>
           </div>
           <!-- Diapositiva 4 -->
@@ -192,9 +191,9 @@
             </div>
           </div>
           <!-- Diapositiva 5 -->
-          <div class="carousel-item">
-            <div class="container d-flex justify-content-center">
-              <div class="card-diapositiva5 text-center justify-content-center">
+          <div  class="carousel-item"  id="slide3" >
+            <div class="container d-flex justify-content-center container-planes">
+              <div class="card-diapositiva5 text-center justify-content-center container-planes ">
                 <p class="p-paso my-5">PASO 3 DE 4</p>
                 <h5 class="card-title mb-5 fs-3">
                   Elige el plan que más te guste.
@@ -203,10 +202,10 @@
                 <!-- plan BASICO -->
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                   <!-- Plan Básico con anuncios -->
-                  <div class="col-12 col-md-6 col-lg-4 card-planes">
+                  <div class="col-12 col-md-12 col-lg-4 card-planes">
                     <div class="card card-planes p-4">
                       <div class="card-body mb-4">
-                        <h5 class="card-title">Básico con anuncios</h5>
+                        <h5 class="card-title">Básico </h5>
                         <div class="row">Precio por mes</div>
                         <div class="row">$4299</div>
                         <hr />
@@ -217,7 +216,7 @@
                         <div class="row">1080p (Full HD)</div>
                         <hr />
                         <div class="row">Anuncios</div>
-                        <div class="row">Menos de lo que usted piensa</div>
+                        <div class="row">Menos de lo que piensa</div>
                         <hr />
                         <div class="row">Dispositivos compatibles</div>
                         <div class="row">TV, computadora, tablet, móvil</div>
@@ -231,8 +230,8 @@
                   </div>
 
                   <!-- Plan Standard -->
-                  <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card p-4">
+                  <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card card-planes p-4">
                       <div class="card-body mb-4">
                         <h5 class="card-title">Standard</h5>
                         <div class="row">Precio por mes</div>
@@ -258,8 +257,8 @@
                     </div>
                   </div>
                   <!-- Plan Premium -->
-                  <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card p-4">
+                  <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card card-planes p-4">
                       <div class="card-body mb-4">
                         <h5 class="card-title">Premium</h5>
                         <div class="row">Precio por mes</div>
@@ -287,7 +286,7 @@
                 </div>
                 <div class="row">
                   <div class="col-md-12 col-lg-12">
-                    <p class="parrafo">
+                    <p class="parrafo p-2" #parrafo>
                       Obtenga más información sobre el plan con publicidad. Al
                       seleccionar un plan con publicidad, se le pedirá que
                       proporcione su fecha de nacimiento para personalizar los
@@ -333,21 +332,21 @@
                       data-bs-toggle="modal"
                       data-bs-target="#tarjetaCreditoModal"
                     >
-                      Tarjeta de credito o debito
+                      <p class="d-flex">Tarjeta de credito o debito</p>
                       <img
-                        class="img-tarjetas"
+                        class="img-tarjetas d-flex"
                         src="https://e7.pngegg.com/pngimages/679/550/png-clipart-mastercard-discover-card-payment-american-express-visa-visa-master-card-text-logo.png"
                         alt="imagen tarjetas"
                       />
                     </div>
                     <div
-                      class="row container-metodo-pago d-flex"
+                      class="row container-metodo-pago d-flex "
                       data-bs-toggle="modal"
                       data-bs-target="#CodigoTarjetaModal"
                     >
-                      Código de tarjeta prepago
-                      <img
-                        class="img-tarjetas"
+                      <p class="d-flex">Código de tarjeta prepago</p>
+                      <img 
+                        class="img-tarjetas d-flex"
                         src="/asset/logo-imgenes/logo2.png"
                         alt="logo"
                       />
@@ -363,12 +362,6 @@
                       <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h5
-                              class="modal-title"
-                              id="tarjetaCreditoModalLabel"
-                            >
-                              Información de su tarjeta de crédito o débito
-                            </h5>
                             <button
                               type="button"
                               class="btn-close"
@@ -399,7 +392,6 @@
                                       maxlength="20"
                                       pattern="\d{13,19}" 
                                       required>
-                                    />
                                     <label for="floatingInput" class="mx-2"
                                       >Número de tarjeta</label
                                     >
@@ -413,7 +405,6 @@
                                           id="floatingInputFecha"
                                           placeholder="Fecha de validación"
                                           required>
-                                        />
                                       </div>
                                       <div class="col-xs -12 col-sm-6">
                                         <input
@@ -423,7 +414,6 @@
                                           placeholder="CVV"
                                           maxlength="3"
                                           required>
-                                        />
                                       </div>
                                     </div>
                                   </div>
@@ -434,7 +424,6 @@
                                       id="floatingInputNombre"
                                       placeholder="Escriba su nombre"
                                       required>
-                                    />
                                     <label
                                       for="floatingInputNombre"
                                       class="mx-2"
@@ -464,7 +453,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="modal-footer  div-btn-modal mb-5">
+                          <div class="modal-footer  div-btn-modal-iniciar mb-5">
                             <button
                               type="button"
                               class="btn  btn-red"
@@ -517,7 +506,6 @@
                                     minlength="6"
                                     maxlength="20"
                                     required>
-                                  />
                                   <label for="floatingInput" class="mx-2"
                                     >Ingrese el PIN o codigo </label
                                   >

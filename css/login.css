@@ -62,15 +62,15 @@ html {
     }
   }
 
+  .icon-formulario {
+    color: var(--bg-red);
+    font-size: 16px;
+  }
+
   .card-diapositiva5 {
     padding: 70px;
     box-shadow: 0px 0px 10px 0px #848383;
     width: 100%;
-  }
-
-  .icon-formulario {
-    color: var(--bg-red);
-    font-size: 16px;
   }
 
   .btn-red {
@@ -79,11 +79,11 @@ html {
     font-family: var(--font-roboto);
     padding: 10px 80px;
     transition: 0.2s all ease-in-out;
-  }
 
-  .btn-red:hover {
-    background: var(--bg-secondary);
-    color: var(--bg-red);
+    &.btn-red:hover {
+      background-color: var(--bg-secondary);
+      color: var(--bg-red);
+    }
   }
 
   .parrafo {
@@ -93,49 +93,58 @@ html {
     color: rgb(87, 86, 86);
   }
 
-  .container-metodo-pago {
-    flex-direction: column;
-    margin: auto;
-    margin-bottom: 10px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    align-items: start;
-    border: 1px solid gray;
-    width: 100%;
-  }
-
-  .img-tarjetas {
-    background: #ffffff;
-    width: 120px;
-    height: 30px;
-  }
   .container-pago {
     border: none;
     margin: auto;
     padding: 10px;
-  }
 
-  .btn-tarjetas {
-    background: white;
-    color: black;
-    border: 1px solid #4a4a4a;
-    margin: 10px;
-    padding: 10px 90px;
-    transition: 0.1s all ease-in;
-  }
+    .container-metodo-pago {
+      flex-direction: column;
+      margin: auto;
+      margin-bottom: 10px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      align-items: start;
+      border: 1px solid gray;
+      width: 100%;
+    }
 
-  .btn-tarjetas:hover {
-    background: var(--bg-red);
-    color: var(--color-white);
-    border-radius: 10px;
-  }
+    .img-tarjetas {
+      background: #ffffff;
+      width: 120px;
+      height: 30px;
+    }
 
-  .div-btn-modal {
-    display: block;
-    text-align: center;
+    .btn-tarjetas {
+      background: white;
+      color: black;
+      border: 1px solid #4a4a4a;
+      margin: 10px;
+      padding: 10px 90px;
+      transition: 0.1s all ease-in;
+
+      &.btn-tarjetas:hover {
+        background-color: var(--bg-red);
+        color: var(--color-white);
+        border-radius: 10px;
+      }
+    }
+
+    .div-btn-modal-iniciar {
+      display: block;
+      text-align: center;
+    }
   }
 }
 
+.card-planes {
+  transition: transform 0.3s ease box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px 0px var(--color-grey);
+  }
+}
 /* media query */
 
 @media screen and (max-width: 576px) {
@@ -143,8 +152,16 @@ html {
     padding: 30px;
   }
 
+  .container-planes {
+    margin-bottom: 40px;
+  }
+
   .div-icons {
     font-size: 50px;
+  }
+
+  .parrafo {
+    display: none;
   }
 
   .div-btn-modal .btn-red {
@@ -163,8 +180,18 @@ html {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .container .card-diapositiva {
+    padding: 30px;
+  }
+}
+
 @media screen and (min-width: 992px) {
-  .container-pago .container-metodo-pago {
+  .container-metodo-pago {
     width: 80%;
+  }
+
+  .formulario {
+    width: 50%;
   }
 }
