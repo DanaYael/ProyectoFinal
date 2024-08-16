@@ -9,13 +9,23 @@ Recomendaciones Personalizadas: Algoritmo que sugiere contenido basado en el his
 Listas de Favoritos: Guarda y organiza tu contenido favorito.
 Perfil de Usuario: Crea y personaliza múltiples perfiles por cuenta.
 Soporte Multiplataforma: Compatible con navegadores web, aplicaciones móviles y televisores inteligentes.
+<<<<<<< HEAD
 TECNOLOGÍAS Y PLATAFORMAS UTILIZADAS
 
+=======
+
+TECNOLOGÍAS Y PLATAFORMAS UTILIZADAS
+
+>>>>>>> 1a404e7d9e46434f4576eb7461087e1176f492df
 HTML
 CSS
 Git
 GitHub
 Kanban
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1a404e7d9e46434f4576eb7461087e1176f492df
 CLONACIÓN DEL REPOSITORIO
 
 bash
@@ -27,6 +37,7 @@ Regístrate y crea un perfil.
 Navega por las categorías o usa la barra de búsqueda para encontrar contenido.
 Agrega tus películas o series favoritas a tu lista.
 ¡Disfruta del contenido en streaming!
+<<<<<<< HEAD
 CONTRIBUIR
 
 ¡Contribuciones son bienvenidas! Sigue estos pasos para contribuir al proyecto:
@@ -39,5 +50,21 @@ PARA CONTACTARNOS
 
 Para preguntas o comentarios, puedes contactarnos en:
 
+=======
+
+CONTRIBUIR
+
+¡Contribuciones son bienvenidas! Sigue estos pasos para contribuir al proyecto:
+
+Haz un fork del repositorio.
+Crea una rama con la característica o corrección (git checkout -b feature/nueva-funcionalidad).
+Realiza tus cambios y realiza commits descriptivos.
+Envía un pull request a la rama develop.
+
+PARA CONTACTARNOS
+
+Para preguntas o comentarios, puedes contactarnos en:
+
+>>>>>>> 1a404e7d9e46434f4576eb7461087e1176f492df
 Email: support@flixGo.com
 GitHub: FlixGo
