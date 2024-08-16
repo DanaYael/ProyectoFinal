@@ -20,3 +20,13 @@
 .nav-item .nav-link {
   color: aliceblue;
 }
+
+.nav-item {
+  list-style: none;
+}
+
+@media screen (max: 553px) {
+  .buscador {
+    width: 20px;
+  }
+}
