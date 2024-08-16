@@ -1,22 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-.bg-personalizado{
-    background-color: #333333;
-}
-.nav-item{
-    margin: 10px;
-    left: 15px;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar-brand{
-    margin-left: 30px;
+.bg-personalizado {
+  background-color: #333333;
 }
 
-.nav-item .nav-link{
-    color: aliceblue;
+.nav-item {
+  margin: 10px;
+  left: 15px;
+}
+
+.navbar-brand {
+  margin-left: 30px;
+}
+
+.nav-item .nav-link {
+  color: aliceblue;
 }
