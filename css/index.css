@@ -14,6 +14,8 @@
   --bg-secondary: #181818; /* bg de modales , botones*/
 
   /* Tamaños de fuente */
+  --font-size-XXL: 36px;
+  --font-size-extra-large: 32px;
   --font-size-large: 28px;
   --font-size-medium: 24px;
   --font-size-small: 16px;
