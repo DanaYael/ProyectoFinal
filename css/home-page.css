@@ -5,9 +5,14 @@
 
 .body-home-page {
   background-color: var(--bg-primary);
+  overflow-x: hidden;
 }
 
 /* ESTILOS NAVBAR */
+
+.navbar.fixed-top {
+  z-index: 1030;
+}
 
 .container-fluid {
   font-family: var(--font-roboto);
@@ -15,34 +20,44 @@
   color: var(--color-white);
 }
 
+.buscar {
+  width: 100%;
+}
+
+.buscar .input-group .input-group-text {
+  padding-top: 15px;
+  padding-right: 25px;
+  font-size: 24px;
+}
+
 /* ESTILOS CARROUSEL */
 
 .carousel-sugerencias img {
-  height: 100vh;
+  height: 70vh;
   object-fit: cover;
 }
+
 /* ESTILOS DE TARJETAS */
-.card-img-top {
-  width: 30%;
-  height: 500px; /* Ajusta la altura según sea necesario */
-  object-fit: fill; /* Hace que la imagen se recorte para llenar el contenedor */
-}
 
-.card {
-  max-width: 85%;
-}
-
-.main-home-page .card-title {
-  font-family: var(--font-bebas-neue);
-  font-size: var(--font-size-XXL);
-  font-weight: 500;
-  color: var(--color-white);
-  margin: 20px;
-}
-
-.card .film-title {
+.card-section-title {
   font-family: var(--font-bebas-neue);
   font-size: var(--font-size-large);
   font-weight: 500;
-  color: black;
+  color: var(--color-white);
+  margin: 10px;
+  text-align: start;
+  text-decoration: none;
+}
+.card-section-title:hover {
+  color: rgb(63, 59, 59);
+}
+.card-img-top {
+  width: 90%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card {
+  max-width: 90%;
+  margin: 0;
 }
