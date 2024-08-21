@@ -16,7 +16,7 @@
 
 .container-fluid {
   font-family: var(--font-roboto);
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-extra-large);
   color: var(--color-white);
 }
 
@@ -41,7 +41,7 @@
 
 .card-section-title {
   font-family: var(--font-bebas-neue);
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-extra-large);
   font-weight: 500;
   color: var(--color-white);
   margin: 10px;
@@ -52,12 +52,20 @@
   color: rgb(63, 59, 59);
 }
 .card-img-top {
-  width: 90%;
-  height: 400px;
+  width: 130%;
+  height: 340px;
   object-fit: cover;
 }
 
 .card {
-  max-width: 90%;
+  max-width: 130%;
   margin: 0;
+}
+
+#carouselExample .carousel-control-prev {
+  left: -6%;
+}
+
+#carouselExample .carousel-control-next {
+  right: -6%;
 }
