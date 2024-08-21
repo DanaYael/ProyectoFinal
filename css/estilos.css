@@ -1,8 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
+.elenco {
+  margin-top: 120px;
+  margin-left: 10px;
 }
 
-background {
-  background-color: black;
+.background-header {
+  background-color: rgb(14, 13, 13);
+}
+
+.background {
+  background-color: rgb(14, 13, 13);
+  color: white;
 }
