@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 .pie-pagina{
@@ -25,23 +25,64 @@
     justify-content: center;
     align-items: center;
 }
-.pie-pagina .grupo-1 .box figure img{
-    width: 250px;
-}
+
 .pie-pagina .grupo-1 .box h2{
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;
+    font-family: "Nunito Sans", sans-serif;
     
 }
 .pie-pagina .grupo-1 .box a{
     text-decoration: none;
     color: #fff;
     transition: all 300ms ease;
+    
 }
-.pie-pagina .grupo-1 .box p{
-    color: #efefef;
-    margin-bottom: 10px;
+
+.ul-box-2{
+    margin: 20px;
+    transition: all .40s ease;
+    
+}
+.ul-box-2:hover{
+    transform: translateY(-3px) translateX(-5px);
+    color: #fff;
+}
+.box-2 .ayuda{
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+    
+}
+.box-2 li{
+    margin-bottom: 16px;
+    
+    list-style: none;
+}
+.box-2 li a{
+    display: block;
+    color: #d6d6d6;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all .40s ease;
+}
+.box-2 li a:hover{
+    transform: translateY(-3px) translateX(-5px);
+    color: #fff;
+}
+.box .terminos-condiciones{
+    text-decoration: none;
+    list-style: none;
+    color: #d6d6d6;
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .40s ease;
+}
+.box .terminos-condiciones:hover{
+    transform: translateY(-3px) translateX(-5px);
 }
 .pie-pagina .grupo-1 .red-social a{
     display: inline-block;
@@ -51,12 +92,12 @@
     line-height: 45px;
     color: #fff;
     margin-right: 10px;
-    background-color: #0d2033;
+    background-color:   #1A1A40;
     text-align: center;
     transition: all 300ms ease;
 }
 .pie-pagina .grupo-1 .red-social a:hover{
-    color: aqua;
+    color: #E50914;
 }
 .pie-pagina .grupo-2{
     background-color: #121212;
