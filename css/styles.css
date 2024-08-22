@@ -17,3 +17,24 @@
   --font-size-small: 16px;
   --font-size-description: 14px;
 }
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+}
+
+/* Box del Título */
+.title-container {
+  margin: 20px; /* Espaciado alrededor del título */
+}
+
+/* Texto del Título */
+.title-container h1 {
+  font: var(--font-montserrat); /* Fuente */
+  font-size: var(--font-size-large); /* Tamaño del texto */
+  color: var(--color-white); /* Color del texto */
+  margin: 0;
+  padding: 0;
+}
