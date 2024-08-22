@@ -1,22 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-}
-.bg-personalizado{
+  }
+  
+  .bg-personalizado {
     background-color: #333333;
-}
-.nav-item{
+  }
+  
+  .nav-item {
     margin: 10px;
     left: 15px;
-    
-}
-
-.navbar-brand{
+  }
+  
+  .navbar-brand {
     margin-left: 30px;
-}
-
-.nav-item .nav-link{
+  }
+  
+  .nav-item .nav-link {
     color: aliceblue;
-}
+  }
+  
+  .nav-item {
+    list-style: none;
+  }
+  
+  @media screen (max: 553px) {
+    .buscador {
+      width: 20px;
+    }
+  }
