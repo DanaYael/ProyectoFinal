@@ -241,7 +241,7 @@
       </div>
       <!-- FIN CAROUSEL -->
 
-      <!-- INICIO CAROUSEL CARDS -->
+      <!-- INICIO CARDS -->
 
       <!-- SECCIÓN "CONTINUAR VIENDO" -->
       <br />
@@ -250,7 +250,11 @@
         href="../pages/continue-watching-page.html"
         >Continuar viendo</a
       >
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div
+        id="carouselContinuarViendo"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="d-flex">
@@ -331,84 +335,424 @@
               </div>
               <!--  Fin Modal -->
               <div class="card mx-5" style="width: 18rem">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalEndGame"
+                >
+                  <img
+                    src="../asset/img-peliculas/accion/portada-avengers-end-game.jpg"
+                    class="card-img-top"
+                    alt="Avengers End Game"
+                  />
+                </a>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modalEndGame"
+                tabindex="-1"
+                aria-labelledby="modalEndGameLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header background-modal">
+                      <h1 class="modal-title" id="modalEndGameLabel">
+                        Avengers: End Game
+                      </h1>
+                    </div>
+                    <div
+                      class="modal-body d-flex flex-column align-items-center background-modal"
+                    >
+                      <img
+                        src="../asset/img-peliculas/accion/portada-avengers-end-game.jpg"
+                        class="img-fluid"
+                        alt="Avengers End Game"
+                        width="80%"
+                      />
+                      <br />
+                      <p class="modal-description">
+                        Película ambientada después de los catastróficos sucesos
+                        de Avengers: Infinity War, en los que Thanos eliminó
+                        deliberadamente a la mitad del universo al usar las
+                        gemas del infinito. Los que no se fueron, están
+                        desesperados por hacer algo (lo que sea) para traer de
+                        vuelta a sus seres queridos.
+                      </p>
+                    </div>
+                    <div
+                      class="film-details d-flex flex-column background-modal"
+                    >
+                      <h6>
+                        Elenco: Robert Downey Jr, Chris Evans, Chris Hemsworth,
+                        Mark Ruffalo
+                      </h6>
+                      <br />
+                      <h6>
+                        Géneros: peliculas para reir, peliculas de accion y
+                        aventura
+                      </h6>
+                      <br />
+                      <h6>Este título es: Explosivo, violento e impactante</h6>
+                      <br />
+                    </div>
+                    <div
+                      class="film-details d-flex background-modal align-items-center justify-content-evenly"
+                    >
+                      <h6 class="text-success">Agregada recientemente</h6>
+                      <h6>2019</h6>
+                      <h6>3h 1m</h6>
+                    </div>
+                    <div>
+                      <button class="btn-modal align-items-end">
+                        Reproducir
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FIN MODAL -->
+              <div class="card mx-5" style="width: 18rem">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalDarkNight"
+                >
+                  <img
+                    src="../asset/img-peliculas/accion/portada-dark-night.jfif"
+                    class="card-img-top"
+                    alt="Batman Dark Night"
+                  />
+                </a>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modalDarkNight"
+                tabindex="-1"
+                aria-labelledby="modalDarkNightLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header background-modal">
+                      <h1 class="modal-title" id="modalDarkNightLabel">
+                        Batman: Dark Night
+                      </h1>
+                    </div>
+                    <div
+                      class="modal-body d-flex flex-column align-items-center background-modal"
+                    >
+                      <img
+                        src="../asset/img-peliculas/accion/portada-dark-night.jfif"
+                        class="img-fluid"
+                        alt="Batman Dark Night"
+                        width="80%"
+                      />
+                      <br />
+                      <p class="modal-description">
+                        Batman tiene que mantener el equilibrio entre el
+                        heroísmo y el vigilantismo para pelear contra un vil
+                        criminal conocido como el Guasón, que pretende sumir
+                        Ciudad Gótica en la anarquía.
+                      </p>
+                    </div>
+                    <div
+                      class="film-details d-flex flex-column background-modal"
+                    >
+                      <h6>
+                        Elenco: Christian Bale, Michael Caine, Heath Ledger,
+                        Gary Oldman
+                      </h6>
+                      <br />
+                      <h6>Géneros: peliculas de accion y aventura</h6>
+                      <br />
+                      <h6>Este título es: Explosivo, violento e impactante</h6>
+                      <br />
+                    </div>
+                    <div
+                      class="film-details d-flex background-modal align-items-center justify-content-evenly"
+                    >
+                      <h6 class="text-success">Agregada recientemente</h6>
+                      <h6>2008</h6>
+                      <h6>2h 32m</h6>
+                    </div>
+                    <div>
+                      <button class="btn-modal align-items-end">
+                        Reproducir
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mx-5" style="width: 18rem">
                 <img
-                  src="../asset/img/portada-work-in-progress.png"
+                  src="../asset/img-peliculas/ci-fi/portada-interestelar.jfif"
                   class="card-img-top"
-                  alt=""
+                  alt="Interestelar"
                 />
               </div>
               <div class="card mx-5" style="width: 18rem">
                 <img
-                  src="../asset/img/portada-work-in-progress.png"
+                  src="../asset/img-peliculas/ci-fi/portada-blade-runner.jfif"
                   class="card-img-top"
-                  alt=""
+                  alt="Blade Runner"
                 />
               </div>
               <div class="card mx-5" style="width: 18rem">
                 <img
-                  src="../asset/img/portada-work-in-progress.png"
+                  src="../asset/img-peliculas/comedia/portada-malditos-vecinos.jpg"
                   class="card-img-top"
-                  alt=""
-                />
-              </div>
-              <div class="card mx-5" style="width: 18rem">
-                <img
-                  src="../asset/img/portada-work-in-progress.png"
-                  class="card-img-top"
-                  alt=""
-                />
-              </div>
-              <div class="card mx-5" style="width: 18rem">
-                <img
-                  src="../asset/img/portada-work-in-progress.png"
-                  class="card-img-top"
-                  alt=""
+                  alt="Malditos Vecinos"
                 />
               </div>
             </div>
           </div>
-          <div class="carousel-item active">
+          <div class="carousel-item">
             <div class="d-flex">
               <div class="card mx-5" style="width: 18rem">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalMatrix"
+                >
+                  <img
+                    src="../asset/img-peliculas/ci-fi/portada-matrix.jpg"
+                    class="card-img-top"
+                    alt="Matrix"
+                  />
+                </a>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modalMatrix"
+                tabindex="-1"
+                aria-labelledby="modalMatrixLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header background-modal">
+                      <h1 class="modal-title" id="modalMatrixLabel">Matrix</h1>
+                    </div>
+                    <div
+                      class="modal-body d-flex flex-column align-items-center background-modal"
+                    >
+                      <img
+                        src="../asset/img-peliculas/ci-fi/portada-matrix.jpg"
+                        class="img-fluid"
+                        alt="Matrix"
+                        width="80%"
+                      />
+                      <br />
+                      <p class="modal-description">
+                        Representa un futuro distópico en el que la humanidad
+                        está atrapada sin saberlo dentro de una realidad
+                        simulada llamada Matrix, que las máquinas inteligentes
+                        han creado para distraer a los humanos mientras usan sus
+                        cuerpos como fuente de energía en campos de cultivo.
+                      </p>
+                    </div>
+                    <div
+                      class="film-details d-flex flex-column background-modal"
+                    >
+                      <h6>
+                        Elenco: Keanu Reeves, Laurence Fishburne, Carrie-Anne
+                        Moss y Hugo Weaving
+                      </h6>
+                      <br />
+                      <h6>Géneros: peliculas de ciencia ficcion y accion</h6>
+                      <br />
+                      <h6>Este título es: futurista y novedoso</h6>
+                      <br />
+                    </div>
+                    <div
+                      class="film-details d-flex background-modal align-items-center justify-content-evenly"
+                    >
+                      <h6 class="text-success">Agregado recientemente</h6>
+                      <h6>1999</h6>
+                      <h6>2h 16m</h6>
+                    </div>
+                    <div>
+                      <button class="btn-modal align-items-end">
+                        Reproducir
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mx-5" style="width: 18rem">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalWallE">
+                  <img
+                    src="../asset/img-peliculas/ci-fi/portada-wall-e.jfif"
+                    class="card-img-top"
+                    alt="Portada Wall E"
+                  />
+                </a>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modalWallE"
+                tabindex="-1"
+                aria-labelledby="modalWallELabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header background-modal">
+                      <h1 class="modal-title" id="modalWallELabel">Wall-E</h1>
+                    </div>
+                    <div
+                      class="modal-body d-flex flex-column align-items-center background-modal"
+                    >
+                      <img
+                        src="../asset/img-peliculas/ci-fi/portada-wall-e.jfif"
+                        class="img-fluid"
+                        alt="Wall E"
+                        width="80%"
+                      />
+                      <br />
+                      <p class="modal-description">
+                        Esta película animada retrata una oscura realidad y un
+                        futuro que no está tan alejado de la especie humana,
+                        donde el consumismo y la irresponsabilidad de los
+                        humanos en la sociedad capitalista acaban con la vida en
+                        la tierra.
+                      </p>
+                    </div>
+                    <div
+                      class="film-details d-flex flex-column background-modal"
+                    >
+                      <h6>
+                        Elenco: Ben Burtt, Andrew Stanton, Elissa Knight, Jeff
+                        Garlin
+                      </h6>
+                      <br />
+                      <h6>Géneros: peliculas de ciencia ficcion e infantil</h6>
+                      <br />
+                      <h6>Este título es: futurista y novedoso</h6>
+                      <br />
+                    </div>
+                    <div
+                      class="film-details d-flex background-modal align-items-center justify-content-evenly"
+                    >
+                      <h6 class="text-success">Nuevo</h6>
+                      <h6>2008</h6>
+                      <h6>1h 38m</h6>
+                    </div>
+                    <div>
+                      <button class="btn-modal align-items-end">
+                        Reproducir
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mx-5" style="width: 18rem">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalElPadrino"
+                >
+                  <img
+                    src="../asset/img-peliculas/drama/portada-el-padrino.jfif"
+                    class="card-img-top"
+                    alt="Portada El Padrino"
+                  />
+                </a>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modalElPadrino"
+                tabindex="-1"
+                aria-labelledby="modalElPadrinoLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header background-modal">
+                      <h1 class="modal-title" id="modalElPadrinoLabel">
+                        El Padrino
+                      </h1>
+                    </div>
+                    <div
+                      class="modal-body d-flex flex-column align-items-center background-modal"
+                    >
+                      <img
+                        src="../asset/img-peliculas/drama/portada-el-padrino.jfif"
+                        class="img-fluid"
+                        alt="El Padrino"
+                        width="80%"
+                      />
+                      <br />
+                      <p class="modal-description">
+                        Don Corleone tiene cuatro hijos: una chica, Connie, y
+                        tres varones; Sonny, Michael y Fredo. Cuando el Padrino
+                        reclina intervenir en el negocio de estupefacientes,
+                        empieza una cruenta lucha de violentos episodios entre
+                        las distintas familias del crimen organizado.
+                      </p>
+                    </div>
+                    <div
+                      class="film-details d-flex flex-column background-modal"
+                    >
+                      <h6>
+                        Elenco: Marlon Brando, Al Pacino, Robert Duvall, James
+                        Caan
+                      </h6>
+                      <br />
+                      <h6>Géneros: peliculas de drama y crimen</h6>
+                      <br />
+                      <h6>Este título es: intrigante y violento</h6>
+                      <br />
+                    </div>
+                    <div
+                      class="film-details d-flex background-modal align-items-center justify-content-evenly"
+                    >
+                      <h6 class="text-success">Agregado recientemente</h6>
+                      <h6>1972</h6>
+                      <h6>2h 55m</h6>
+                    </div>
+                    <div>
+                      <button class="btn-modal align-items-end">
+                        Reproducir
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mx-5" style="width: 18rem">
                 <img
-                  src="../asset/img/portada-work-in-progress.png"
+                  src="../asset/img-peliculas/drama/portada-sonidos-de-libertad.jpg"
                   class="card-img-top"
-                  alt=""
+                  alt="Sonidos de Libertad"
                 />
               </div>
               <div class="card mx-5" style="width: 18rem">
                 <img
-                  src="../asset/img/portada-work-in-progress.png"
+                  src="../asset/img-peliculas/terror/portada-el-gabinete-del-dr-caligari.jfif"
                   class="card-img-top"
-                  alt=""
+                  alt="El Gabinete del Doctor Caligari"
                 />
               </div>
               <div class="card mx-5" style="width: 18rem">
                 <img
-                  src="../asset/img/portada-work-in-progress.png"
+                  src="../asset/img-peliculas/drama/portada-harakiri.jpg"
                   class="card-img-top"
-                  alt=""
-                />
-              </div>
-              <div class="card mx-5" style="width: 18rem">
-                <img
-                  src="../asset/img/portada-work-in-progress.png"
-                  class="card-img-top"
-                  alt=""
-                />
-              </div>
-              <div class="card mx-5" style="width: 18rem">
-                <img
-                  src="../asset/img/portada-work-in-progress.png"
-                  class="card-img-top"
-                  alt=""
-                />
-              </div>
-              <div class="card mx-5" style="width: 18rem">
-                <img
-                  src="../asset/img/portada-work-in-progress.png"
-                  class="card-img-top"
-                  alt=""
+                  alt="Harakiri"
                 />
               </div>
             </div>
@@ -417,7 +761,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselContinuarViendo"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -426,7 +770,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselContinuarViendo"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -440,96 +784,518 @@
         href="../pages/movies-page.html"
         >Películas</a
       >
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div
+        id="carouselPeliculas"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="d-flex">
               <div class="card mx-5" style="width: 18rem">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalSuenosdeLibertad"
+                >
+                  <img
+                    src="../asset/img-peliculas/drama/portada-sueños-de-libertad.jpg"
+                    class="card-img-top"
+                    alt="Portada Suenos de Libertad"
+                  />
+                </a>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modalSuenosdeLibertad"
+                tabindex="-1"
+                aria-labelledby="modalSuenosdeLibertadLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header background-modal">
+                      <h1 class="modal-title" id="modalSuenosdeLibertadLabel">
+                        Sueños de Libertad
+                      </h1>
+                    </div>
+                    <div
+                      class="modal-body d-flex flex-column align-items-center background-modal"
+                    >
+                      <img
+                        src="../asset/img-peliculas/drama/portada-sueños-de-libertad.jpg"
+                        class="img-fluid"
+                        alt="Work in Progress"
+                        width="80%"
+                      />
+                      <br />
+                      <p class="modal-description">
+                        Basada en la novela corta de Stephen King, Rita Hayworth
+                        y la redención de Shawshank, el film abarca una mirada
+                        optimista de la vida, contando la historia de dos
+                        amigos, Robbins y Freeman, en una prisión. Se enfatiza
+                        en el no perder las esperanzas, incluso en la más
+                        inhóspitas situaciones.
+                      </p>
+                    </div>
+                    <div
+                      class="film-details d-flex flex-column background-modal"
+                    >
+                      <h6>
+                        Elenco: Tim Robbins, Morgan Freeman, Bob Gunton, William
+                        Sadler
+                      </h6>
+                      <br />
+                      <h6>Géneros: peliculas de suspenso y crimen</h6>
+                      <br />
+                      <h6>Este título es: intrigante y violento</h6>
+                      <br />
+                    </div>
+                    <div
+                      class="film-details d-flex background-modal align-items-center justify-content-evenly"
+                    >
+                      <h6 class="text-success">Agregado recientemente</h6>
+                      <h6>1994</h6>
+                      <h6>2h 22m</h6>
+                    </div>
+                    <div>
+                      <button class="btn-modal align-items-end">
+                        Reproducir
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mx-5" style="width: 18rem">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalSilencioInocentes"
+                >
+                  <img
+                    src="../asset/img-peliculas/terror/portada-el-silencio-de-los-inocentes.jfif"
+                    class="card-img-top"
+                    alt="Portada El Silencio de los Inocentes"
+                  />
+                </a>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modalSilencioInocentes"
+                tabindex="-1"
+                aria-labelledby="modalSilencioInocentesLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header background-modal">
+                      <h1 class="modal-title" id="modalSilencioInocentesLabel">
+                        El Silencio de los Inocentes
+                      </h1>
+                    </div>
+                    <div
+                      class="modal-body d-flex flex-column align-items-center background-modal"
+                    >
+                      <img
+                        src="../asset/img-peliculas/terror/portada-el-silencio-de-los-inocentes.jfif"
+                        class="img-fluid"
+                        alt="El Silencio delos Inocentes"
+                        width="80%"
+                      />
+                      <br />
+                      <p class="modal-description">
+                        Una agente en entrenamiento del FBI busca la ayuda y
+                        consejo de un brillante asesino para poder capturar a
+                        otro asesino, el doctor Hannibal Lecter, un psiquiatra
+                        que también es un psicópata violento y antropófago.
+                      </p>
+                    </div>
+                    <div
+                      class="film-details d-flex flex-column background-modal"
+                    >
+                      <h6>
+                        Elenco: Jodie Foster, Anthony Hopkins, Scott Glenn, Ted
+                        Levine
+                      </h6>
+                      <br />
+                      <h6>Géneros: peliculas de terror y crimen</h6>
+                      <br />
+                      <h6>Este título es: aterrador y violento</h6>
+                      <br />
+                    </div>
+                    <div
+                      class="film-details d-flex background-modal align-items-center justify-content-evenly"
+                    >
+                      <h6 class="text-success">Agregado recientemente</h6>
+                      <h6>1991</h6>
+                      <h6>1h 58m</h6>
+                    </div>
+                    <div>
+                      <button class="btn-modal align-items-end">
+                        Reproducir
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mx-5" style="width: 18rem">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalElResplandor"
+                >
+                  <img
+                    src="../asset/img-peliculas/terror/portada-el-resplandor.jpg"
+                    class="card-img-top"
+                    alt="Portada El Resplandor"
+                  />
+                </a>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modalElResplandor"
+                tabindex="-1"
+                aria-labelledby="modalElResplandorLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header background-modal">
+                      <h1 class="modal-title" id="modalElResplandorLabel">
+                        El Resplandor
+                      </h1>
+                    </div>
+                    <div
+                      class="modal-body d-flex flex-column align-items-center background-modal"
+                    >
+                      <img
+                        src="../asset/img-peliculas/terror/portada-el-resplandor.jpg"
+                        class="img-fluid"
+                        alt="El Resplandor"
+                        width="80%"
+                      />
+                      <br />
+                      <p class="modal-description">
+                        Jack Torrance se convierte en cuidador de invierno en el
+                        Hotel Overlook, en Colorado, con la esperanza de vencer
+                        su bloqueo con la escritura. Se instala allí junto con
+                        su esposa, Wendy, y su hijo, Danny, que está plagado de
+                        premoniciones psíquicas. Mientras la escritura de Jack
+                        no fluye y las visiones de Danny se vuelven más
+                        preocupantes, Jack descubre oscuros secretos del hotel y
+                        comienza a convertirse en un maníaco homicida, empeñado
+                        en aterrorizar a su familia.
+                      </p>
+                    </div>
+                    <div
+                      class="film-details d-flex flex-column background-modal"
+                    >
+                      <h6>
+                        Elenco: Jack Nicholson, Shelley Duvall, Danny Lloyd y
+                        Scatman Crothers
+                      </h6>
+                      <br />
+                      <h6>Géneros: peliculas de terror y misterio</h6>
+                      <br />
+                      <h6>Este título es: violento e inquietante</h6>
+                      <br />
+                    </div>
+                    <div
+                      class="film-details d-flex background-modal align-items-center justify-content-evenly"
+                    >
+                      <h6 class="text-success">Agregado recientemente</h6>
+                      <h6>1980</h6>
+                      <h6>2h 26m</h6>
+                    </div>
+                    <div>
+                      <button class="btn-modal align-items-end">
+                        Reproducir
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mx-5" style="width: 18rem">
                 <img
-                  src="../asset/img/portada-work-in-progress.png"
+                  src="../asset/img-peliculas/accion/portada-corazones-de-acero.jfif"
                   class="card-img-top"
-                  alt=""
+                  alt="Portada Corazones de Acero"
                 />
               </div>
               <div class="card mx-5" style="width: 18rem">
                 <img
-                  src="../asset/img/portada-work-in-progress.png"
+                  src="../asset/img-peliculas/aventuras/portada-aladdin.jfif"
                   class="card-img-top"
-                  alt=""
+                  alt="Portada Aladdin"
                 />
               </div>
               <div class="card mx-5" style="width: 18rem">
                 <img
-                  src="../asset/img/portada-work-in-progress.png"
+                  src="../asset/img-peliculas/terror/portada-la-monja-2.jfif"
                   class="card-img-top"
-                  alt=""
-                />
-              </div>
-              <div class="card mx-5" style="width: 18rem">
-                <img
-                  src="../asset/img/portada-work-in-progress.png"
-                  class="card-img-top"
-                  alt=""
-                />
-              </div>
-              <div class="card mx-5" style="width: 18rem">
-                <img
-                  src="../asset/img/portada-work-in-progress.png"
-                  class="card-img-top"
-                  alt=""
-                />
-              </div>
-              <div class="card mx-5" style="width: 18rem">
-                <img
-                  src="../asset/img/portada-work-in-progress.png"
-                  class="card-img-top"
-                  alt=""
+                  alt="Portada La Monja 2"
                 />
               </div>
             </div>
           </div>
-          <div class="carousel-item active">
+          <div class="carousel-item">
             <div class="d-flex">
               <div class="card mx-5" style="width: 18rem">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalSenorAnillos"
+                >
+                  <img
+                    src="../asset/img-peliculas/aventuras/portada-el-senor-de-los-anillos.jpeg"
+                    class="card-img-top"
+                    alt="Portada El Senor de los Anillos"
+                  />
+                </a>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modalSenorAnillos"
+                tabindex="-1"
+                aria-labelledby="modalSenorAnillosLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header background-modal">
+                      <h1 class="modal-title" id="modalSenorAnillosLabel">
+                        El Señor de los Anillos
+                      </h1>
+                    </div>
+                    <div
+                      class="modal-body d-flex flex-column align-items-center background-modal"
+                    >
+                      <img
+                        src="../asset/img-peliculas/aventuras/portada-el-senor-de-los-anillos.jpeg"
+                        class="img-fluid"
+                        alt="El Senor de los Anillos"
+                        width="80%"
+                      />
+                      <br />
+                      <p class="modal-description">
+                        Frodo, Sam y Gollum se acercan al monte del Destino,
+                        donde destruirán el anillo o perecerán en el intento.
+                        Mientras, Aragorn y sus compañeros se enfrentan a las
+                        monstruosas tropas de Sauron.
+                      </p>
+                    </div>
+                    <div
+                      class="film-details d-flex flex-column background-modal"
+                    >
+                      <h6>
+                        Elenco: Elijah Wood, Ian McKellen, Viggo Mortensen, Sean
+                        Astin
+                      </h6>
+                      <br />
+                      <h6>Géneros: peliculas de aventura y fantasia</h6>
+                      <br />
+                      <h6>Este título es: creativo e impactante</h6>
+                      <br />
+                    </div>
+                    <div
+                      class="film-details d-flex background-modal align-items-center justify-content-evenly"
+                    >
+                      <h6 class="text-success">Agregado recientemente</h6>
+                      <h6>2001</h6>
+                      <h6>2h 58m</h6>
+                    </div>
+                    <div>
+                      <button class="btn-modal align-items-end">
+                        Reproducir
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mx-5" style="width: 18rem">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalStarWarV"
+                >
+                  <img
+                    src="../asset/img-peliculas/aventuras/portada-star-war-5.jpeg"
+                    class="card-img-top"
+                    alt="Portada Star War episodio 5"
+                  />
+                </a>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modalStarWarV"
+                tabindex="-1"
+                aria-labelledby="modalStarWarVLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header background-modal">
+                      <h1 class="modal-title" id="modalStarWarVLabel">
+                        Star War - Episodio V
+                      </h1>
+                    </div>
+                    <div
+                      class="modal-body d-flex flex-column align-items-center background-modal"
+                    >
+                      <img
+                        src="../asset/img-peliculas/aventuras/portada-star-war-5.jpeg"
+                        class="img-fluid"
+                        alt="Star War Episodio 5"
+                        width="80%"
+                      />
+                      <br />
+                      <p class="modal-description">
+                        Aunque la Estrella de la Muerte ha sido destruida, las
+                        tropas imperiales han hecho salir a las fuerzas rebeldes
+                        de sus bases ocultas y los persiguen a través de la
+                        galaxia. Mientras, el grupo de rebeldes de Skywalker se
+                        esconde en un planeta helado.
+                      </p>
+                    </div>
+                    <div
+                      class="film-details d-flex flex-column background-modal"
+                    >
+                      <h6>
+                        Elenco: Mark Hamill, Carrie Fisher, Harrison Ford, Billy
+                        Dee Williams
+                      </h6>
+                      <br />
+                      <h6>Géneros: peliculas infantiles y ciencia ficcion</h6>
+                      <br />
+                      <h6>Este título es: infantil y aventurero</h6>
+                      <br />
+                    </div>
+                    <div
+                      class="film-details d-flex background-modal align-items-center justify-content-evenly"
+                    >
+                      <h6 class="text-success">Agregado recientemente</h6>
+                      <h6>1980</h6>
+                      <h6>2h 4m</h6>
+                    </div>
+                    <div>
+                      <button class="btn-modal align-items-end">
+                        Reproducir
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mx-5" style="width: 18rem">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalLaVidaBella"
+                >
+                  <img
+                    src="../asset/img-peliculas/drama/portada-la-vida-es-bella.jpg"
+                    class="card-img-top"
+                    alt="Portada LaVida es Bella"
+                  />
+                </a>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modalLaVidaBella"
+                tabindex="-1"
+                aria-labelledby="modalLaVidaBellaLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header background-modal">
+                      <h1 class="modal-title" id="modalLaVidaBellaLabel">
+                        LaVida es Bella
+                      </h1>
+                    </div>
+                    <div
+                      class="modal-body d-flex flex-column align-items-center background-modal"
+                    >
+                      <img
+                        src="../asset/img-peliculas/drama/portada-la-vida-es-bella.jpg"
+                        class="img-fluid"
+                        alt="La Vida es Bella"
+                        width="80%"
+                      />
+                      <br />
+                      <p class="modal-description">
+                        Guido, un hombre bueno, vitalista y divertido, cumple
+                        sus dos sueños: poseer su propia librería y casarse con
+                        Dora, una inteligente maestra. El matrimonio vive feliz
+                        con su pequeño hijo de cuatro años, Josué. Pero los
+                        últimos coletazos del fascismo llevan a Guido y a su
+                        hijo a un campo de concentración nazi.
+                      </p>
+                    </div>
+                    <div
+                      class="film-details d-flex flex-column background-modal"
+                    >
+                      <h6>
+                        Elenco: Roberto Benigni, Nicoletta Braschi, Giorgio
+                        Cantarini, Giustino Durano
+                      </h6>
+                      <br />
+                      <h6>Géneros: peliculas de comedia y belico</h6>
+                      <br />
+                      <h6>Este título es: dramatico y belico</h6>
+                      <br />
+                    </div>
+                    <div
+                      class="film-details d-flex background-modal align-items-center justify-content-evenly"
+                    >
+                      <h6 class="text-success">Agregado recientemente</h6>
+                      <h6>1997</h6>
+                      <h6>1h 51m</h6>
+                    </div>
+                    <div>
+                      <button class="btn-modal align-items-end">
+                        Reproducir
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mx-5" style="width: 18rem">
                 <img
-                  src="../asset/img/portada-work-in-progress.png"
+                  src="../asset/img-peliculas/comedia/portada-ocho-apellidos-vascos.jfif"
                   class="card-img-top"
-                  alt=""
+                  alt="Portada Ocho Apellidos Vascos"
                 />
               </div>
               <div class="card mx-5" style="width: 18rem">
                 <img
-                  src="../asset/img/portada-work-in-progress.png"
+                  src="../asset/img-peliculas/drama/portada-testigo-de-cargo.jfif"
                   class="card-img-top"
-                  alt=""
+                  alt="Portada Testigo de Cargo"
                 />
               </div>
               <div class="card mx-5" style="width: 18rem">
                 <img
-                  src="../asset/img/portada-work-in-progress.png"
+                  src="../asset/img-peliculas/aventuras/portada-doolittle.jfif"
                   class="card-img-top"
-                  alt=""
-                />
-              </div>
-              <div class="card mx-5" style="width: 18rem">
-                <img
-                  src="../asset/img/portada-work-in-progress.png"
-                  class="card-img-top"
-                  alt=""
-                />
-              </div>
-              <div class="card mx-5" style="width: 18rem">
-                <img
-                  src="../asset/img/portada-work-in-progress.png"
-                  class="card-img-top"
-                  alt=""
-                />
-              </div>
-              <div class="card mx-5" style="width: 18rem">
-                <img
-                  src="../asset/img/portada-work-in-progress.png"
-                  class="card-img-top"
-                  alt=""
+                  alt="Portada Doolittle"
                 />
               </div>
             </div>
@@ -538,7 +1304,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselPeliculas"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -547,7 +1313,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselPeliculas"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -561,7 +1327,7 @@
         href="../pages/series-page.html"
         >Series</a
       >
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselSeries" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="d-flex">
@@ -609,7 +1375,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item active">
+          <div class="carousel-item">
             <div class="d-flex">
               <div class="card mx-5" style="width: 18rem">
                 <img
@@ -659,7 +1425,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselSeries"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -668,7 +1434,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselSeries"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -683,7 +1449,11 @@
         href="../pages/documentaries-page.html"
         >Documentales</a
       >
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div
+        id="carouselDocumentales"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="d-flex">
@@ -731,7 +1501,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item active">
+          <div class="carousel-item">
             <div class="d-flex">
               <div class="card mx-5" style="width: 18rem">
                 <img
@@ -781,7 +1551,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselDocumentales"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -790,7 +1560,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselDocumentales"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -805,7 +1575,11 @@
         href="../pages/favorites-page.html"
         >Mis Favoritos</a
       >
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div
+        id="carouselMisFavoritos"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="d-flex">
@@ -853,7 +1627,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item active">
+          <div class="carousel-item">
             <div class="d-flex">
               <div class="card mx-5" style="width: 18rem">
                 <img
@@ -903,7 +1677,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselMisFavoritos"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -912,7 +1686,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselMisFavoritos"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>

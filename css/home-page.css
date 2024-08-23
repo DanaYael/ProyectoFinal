@@ -62,10 +62,42 @@
   margin: 0;
 }
 
-#carouselExample .carousel-control-prev {
+#carouselContinuarViendo .carousel-control-prev {
   left: -6%;
 }
 
-#carouselExample .carousel-control-next {
+#carouselContinuarViendo .carousel-control-next {
+  right: -6%;
+}
+
+#carouselPeliculas .carousel-control-prev {
+  left: -6%;
+}
+
+#carouselPeliculas .carousel-control-next {
+  right: -6%;
+}
+
+#carouselSeries .carousel-control-prev {
+  left: -6%;
+}
+
+#carouselSeries .carousel-control-next {
+  right: -6%;
+}
+
+#carouselDocumentales .carousel-control-prev {
+  left: -6%;
+}
+
+#carouselDocumentales .carousel-control-next {
+  right: -6%;
+}
+
+#carouselMisFavoritos .carousel-control-prev {
+  left: -6%;
+}
+
+#carouselMisFavoritos .carousel-control-next {
   right: -6%;
 }
