@@ -1,13 +1,4 @@
-/* nav */
-.btn-danger {
-    background-color: #d70000;
-}
-
-.navbar-dark, .bg-dark {
-    background-color: #1C1C1C;
-}
-
-/* container principal */
+/* Adaptación del CSS personalizado */
 .bg-principal {
     background-image: url('../asset/img/banner.png');
     background-size: cover;
@@ -18,10 +9,14 @@
     align-items: center;
 }
 
-/* seccion de planes de suscripcion en el index */
-.bg-dark {
+.btn-danger {
+    background-color: #d70000;
+}
+
+.navbar-dark, .bg-dark {
     background-color: #1C1C1C;
 }
+
 .card {
     border: none;
 }
@@ -34,4 +29,29 @@
 .display-6 {
     font-size: 2rem;
     font-weight: bold;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .bg-principal {
+        height: 60vh;
+        padding: 20px;
+    }
+
+    .bg-principal img {
+        width: 100%;
+    }
+
+    .display-4 {
+        font-size: 1.5rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
