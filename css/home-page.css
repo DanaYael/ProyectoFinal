@@ -20,6 +20,10 @@
 }
 
 /* ESTILOS DE TARJETAS */
+
+.first-title {
+  margin-top: 10px;
+}
 .card-section-title {
   font-family: var(--font-bebas-neue);
   font-size: var(--font-size-extra-large);
@@ -36,7 +40,7 @@
 
 .card-img-top {
   width: 130vw;
-  height: 29vh;
+  height: 20vh;
   object-fit: cover;
 }
 
@@ -75,6 +79,12 @@
   .container-fluid {
     font-size: var(--font-size-medium); /* Reducir tamaño de fuente */
   }
+
+  .card-img-top {
+    width: 135vw;
+    height: 8vh;
+    object-fit: cover;
+  }
 }
 
 /* Pantallas menores a 1024px */
@@ -88,20 +98,20 @@
   }
 
   .card-img-top {
-    width: 12vw !important; /* Ajustar el ancho de las imágenes de las tarjetas */
-    height: 25vh !important; /* Ajustar la altura de las imágenes de las tarjetas */
+    width: 13vw !important; /* Ajustar el ancho de las imágenes de las tarjetas */
+    height: 20vh !important; /* Ajustar la altura de las imágenes de las tarjetas */
   }
 }
 
 /* Pantallas menores a 768px */
 @media (max-width: 768px) {
   .card {
-    max-width: 100vw; /* Ajustar el ancho máximo de las tarjetas */
+    max-width: 10vw !important; /* Ajustar el ancho máximo de las tarjetas */
   }
 
   .card-img-top {
     width: 10vw !important; /* Ajustar el ancho de las imágenes de las tarjetas */
-    height: 20vh !important; /* Ajustar la altura de las imágenes de las tarjetas */
+    height: 15vh !important; /* Ajustar la altura de las imágenes de las tarjetas */
   }
   .carousel-control-prev {
     left: -3%;
@@ -118,32 +128,29 @@
     display: none;
   }
 
+  .first-title {
+    margin-top: 40px;
+  }
   .card-img-top {
     width: 18vw !important; /* Ajustar el ancho de las imágenes de las tarjetas */
-    height: 22vh !important; /* Ajustar la altura de las imágenes de las tarjetas */
-    .container-fluid {
-      font-size: var(--font-size-small); /* Reducir tamaño de fuente */
-    }
-
-    .card-section-title {
-      font-size: var(--font-size-small); /* Reducir tamaño de fuente */
-    }
+    height: 15vh !important; /* Ajustar la altura de las imágenes de las tarjetas */
+  }
+  .card-section-title {
+    font-size: var(--font-size-small); /* Reducir tamaño de fuente */
   }
 }
-/* Pantallas menores a 375px */
-@media (max-width: 375px) {
+
+/* Pantallas menores a 320px */
+@media (max-width: 320px) {
   #carouselExampleFade {
     display: none;
   }
   .card-img-top {
-    width: 18vw !important; /* Ajustar el ancho de las imágenes de las tarjetas */
-    height: 22vh; /* Ajustar la altura de las imágenes de las tarjetas */
-    .container-fluid {
-      font-size: var(--font-size-small); /* Reducir tamaño de fuente */
-    }
+    width: 22vw !important;
+    height: 15vh !important;
+  }
 
-    .card-section-title {
-      font-size: var(--font-size-small); /* Reducir tamaño de fuente */
-    }
+  .card-section-title {
+    font-size: var(--font-size-small); /* Reducir tamaño de fuente */
   }
 }

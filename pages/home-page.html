@@ -91,13 +91,13 @@
           </div>
           <div class="d-flex align-items-center">
             <div
-              class="buscar col-xxl-10 col-xl-4 col-lg-4 col-md-5 col-sm-10 col-xs-4"
+              class="buscar col-xxl-10 col-xl-4 col-lg-4 col-md-5 col-sm-10 col-xs-4 d-none d-md-flex"
             >
               <div class="input-group">
                 <input
                   class="form-control mx-1 px-1"
                   type="search"
-                  placeholder="Titulo , persona o genero"
+                  placeholder="Título , persona o género"
                   aria-label="Search"
                 />
                 <span
@@ -107,6 +107,9 @@
                   <i class="bi bi-search icon"></i>
                 </span>
               </div>
+            </div>
+            <div class="d-md-none">
+              <i class="bi bi-search icon"></i>
             </div>
             <li class="nav-item dropdown mr-4">
               <a
@@ -254,11 +257,13 @@
 
       <!-- SECCIÓN "CONTINUAR VIENDO" -->
       <br />
-      <a
-        class="card-section-title ps-3 pb-3 ps-4 pb-3"
-        href="../pages/continue-watching-page.html"
-        >Continuar viendo</a
-      >
+      <div class="first-title">
+        <a
+          class="card-section-title ps-4 pb-3"
+          href="../pages/continue-watching-page.html"
+          >Continuar viendo</a
+        >
+      </div>
       <div
         id="carouselContinuarViendo"
         class="carousel slide"
@@ -788,9 +793,7 @@
       </div>
       <!-- SECCIÓN "PELÍCULAS" -->
       <br />
-      <a
-        class="card-section-title ps-3 pb-3 ps-4 pb-3"
-        href="../pages/movies-page.html"
+      <a class="card-section-title ps-4 pb-3" href="../pages/movies-page.html"
         >Películas</a
       >
       <div
@@ -1331,9 +1334,7 @@
       </div>
       <!-- SECCIÓN "SERIES" -->
       <br />
-      <a
-        class="card-section-title ps-3 pb-3 ps-4 pb-3"
-        href="../pages/series-page.html"
+      <a class="card-section-title ps-4 pb-3" href="../pages/series-page.html"
         >Series</a
       >
       <div id="carouselSeries" class="carousel slide" data-bs-ride="carousel">
@@ -1881,7 +1882,7 @@
       <!-- SECCIÓN "DOCUMENTALES" -->
       <br />
       <a
-        class="card-section-title ps-3 pb-3 ps-4 pb-3"
+        class="card-section-title ps-4 pb-3"
         href="../pages/documentaries-page.html"
         >Documentales</a
       >
@@ -2408,7 +2409,7 @@
       <!-- SECCIÓN "MIS FAVORITOS" -->
       <br />
       <a
-        class="card-section-title ps-3 pb-3 ps-4 pb-3"
+        class="card-section-title ps-4 pb-3"
         href="../pages/favorites-page.html"
         >Mis Favoritos</a
       >

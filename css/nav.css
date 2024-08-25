@@ -63,60 +63,56 @@
 
 /* Media Queries */
 
-/* 576px and below */
-@media (max-width: 576px) {
-  .buscar .input-group .input-group-text {
-    padding-top: 5px;
-    padding-right: 10px;
-    font-size: 16px; /* Reducir tamaño de fuente en el campo de búsqueda */
+/*1440px and below*/
+@media (max-width: 1440px) {
+  .container-fluid {
+    width: 1440px !important;
+    margin: 0 !important;
   }
 }
 
-/* 987px and below */
-@media (max-width: 987px) {
-  .buscar {
-    width: 100%;
-    margin-top: 10px;
+/* 1024px and below */
+@media (max-width: 1024px) {
+  .container-fluid {
+    width: 1024px !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
-  .buscar .form-control {
-    display: none; /* Ocultar el campo de entrada */
-  }
-
-  .buscar .input-group-text {
-    background: transparent; /* Quitar el fondo para que solo se vea la lupa */
-    border: none; /* Quitar el borde */
-  }
-
-  .buscar .icon {
-    font-size: 24px; /* Ajustar el tamaño del icono si es necesario */
-  }
-
-  .dropdown {
-    margin-top: 10px;
-  }
-
-  .navbar-collapse {
-    text-align: center;
-  }
-}
-
-/* 992px and below */
-@media (max-width: 992px) {
-  .buscar .input-group .input-group-text {
-    font-size: 20px; /* Reducir tamaño de fuente en el campo de búsqueda */
-  }
-}
-
-/* 1107px and below */
-@media (max-width: 1107px) {
-  .nav-item .nav-link {
+  .navbar .nav-item .nav-link {
     font-size: var(--font-size-small);
+    padding: 2px !important;
   }
 
-  .buscar .input-group .input-group-text {
-    padding-top: 10px;
-    padding-right: 15px;
-    font-size: 18px; /* Reducir tamaño de fuente en el campo de búsqueda */
+  .buscar {
+    width: 30vw !important;
+    padding: 2px !important;
+    font-size: var(--font-size-description) !important;
+  }
+
+  .input-group-text {
+    width: 0.5w !important;
+    padding: 2px !important;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .container-fluid {
+    width: 768px !important;
+  }
+}
+
+/* 425px and below */
+@media (max-width: 425px) {
+  .container-fluid {
+    width: 425px !important;
+  }
+}
+
+/* Pantallas menores a 320px */
+@media (max-width: 320px) {
+  .container-fluid {
+    width: 320px !important;
   }
 }
