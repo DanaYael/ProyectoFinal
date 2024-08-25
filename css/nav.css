@@ -77,6 +77,7 @@
     width: 1024px !important;
     margin: 0 !important;
     padding: 0 !important;
+    font-size: var(--font-size-small);
   }
 
   .navbar .nav-item .nav-link {
@@ -107,6 +108,13 @@
 @media (max-width: 425px) {
   .container-fluid {
     width: 425px !important;
+  }
+}
+
+/* Pantallas menores a 375px */
+@media (max-width: 375px) {
+  .container-fluid {
+    width: 375px !important;
   }
 }
 

@@ -76,23 +76,15 @@
 
 /* Pantallas menores a 1440px */
 @media (max-width: 1440px) {
-  .container-fluid {
-    font-size: var(--font-size-medium); /* Reducir tamaño de fuente */
-  }
-
   .card-img-top {
-    width: 135vw;
-    height: 8vh;
+    width: 15vw !important;
+    height: 19vh !important;
     object-fit: cover;
   }
 }
 
 /* Pantallas menores a 1024px */
 @media (max-width: 1024px) {
-  .container-fluid {
-    font-size: var(--font-size-small); /* Reducir tamaño de fuente */
-  }
-
   .card-section-title {
     font-size: var(--font-size-small); /* Reducir tamaño de fuente */
   }
