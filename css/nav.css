@@ -1,83 +1,95 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.bg-personalizado {
-  background-color: #333333;
-}
-
-.nav-item {
-  margin: 10px;
-  left: 15px;
-}
-
-.navbar-brand {
-  margin-left: 30px;
-}
-
-.nav-item .nav-link {
-  color: aliceblue;
-}
-
-.nav-item {
-  list-style: none;
-}
-
-@media screen (max: 553px) {
-  .buscador {
-    width: 20px;
-  }
-}
- */
-
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Background Customization */
 .bg-personalizado {
   background-color: #333333;
+}
+
+/* Navbar Styles */
+.navbar {
+  align-items: center;
+  width: 100%;
+}
+
+.navbar.fixed-top {
+  z-index: 1030;
 }
 
 .navbar-brand {
   margin-left: 30px;
 }
 
-.nav-item .nav-link {
-  color: aliceblue;
-  padding: 0 10px;
-}
-
+/* Navigation Link Styles */
 .nav-item {
   list-style: none;
 }
 
-.navbar {
-  align-items: center;
+.nav-item .nav-link {
+  color: aliceblue;
+  padding: 0 10px;
+  font-family: var(--font-montserrat);
+  font-size: var(--font-size-medium);
 }
 
+/* Container Styles */
 .container-fluid {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Search Bar Styles */
 .buscar {
-  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
+.buscar .input-group .input-group-text {
+  padding: 15px 25px;
+  font-size: 24px;
+}
+
+/* Dropdown Styles */
 .dropdown .nav-link {
   display: flex;
   align-items: center;
 }
 
-@media (max-width: 992px) {
+/* Media Queries */
+
+/* 576px and below */
+@media (max-width: 576px) {
+  .buscar .input-group .input-group-text {
+    padding-top: 5px;
+    padding-right: 10px;
+    font-size: 16px; /* Reducir tamaño de fuente en el campo de búsqueda */
+  }
+}
+
+/* 987px and below */
+@media (max-width: 987px) {
   .buscar {
     width: 100%;
     margin-top: 10px;
+  }
+
+  .buscar .form-control {
+    display: none; /* Ocultar el campo de entrada */
+  }
+
+  .buscar .input-group-text {
+    background: transparent; /* Quitar el fondo para que solo se vea la lupa */
+    border: none; /* Quitar el borde */
+  }
+
+  .buscar .icon {
+    font-size: 24px; /* Ajustar el tamaño del icono si es necesario */
   }
 
   .dropdown {
@@ -86,5 +98,25 @@
 
   .navbar-collapse {
     text-align: center;
+  }
+}
+
+/* 992px and below */
+@media (max-width: 992px) {
+  .buscar .input-group .input-group-text {
+    font-size: 20px; /* Reducir tamaño de fuente en el campo de búsqueda */
+  }
+}
+
+/* 1107px and below */
+@media (max-width: 1107px) {
+  .nav-item .nav-link {
+    font-size: var(--font-size-small);
+  }
+
+  .buscar .input-group .input-group-text {
+    padding-top: 10px;
+    padding-right: 15px;
+    font-size: 18px; /* Reducir tamaño de fuente en el campo de búsqueda */
   }
 }
