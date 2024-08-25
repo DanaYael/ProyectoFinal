@@ -1,3 +1,4 @@
+/* ESTILOS GENERALES */
 * {
   margin: 0;
   padding: 0;
@@ -5,32 +6,13 @@
 
 .body-home-page {
   background-color: var(--bg-primary);
-  overflow-x: hidden;
-}
-
-/* ESTILOS NAVBAR */
-
-.navbar.fixed-top {
-  z-index: 1030;
-}
-
-.container-fluid {
-  font-family: var(--font-roboto);
-  font-size: var(--font-size-extra-large);
-  color: var(--color-white);
-}
-
-.buscar {
-  width: 100%;
-}
-
-.buscar .input-group .input-group-text {
-  padding-top: 15px;
-  padding-right: 25px;
-  font-size: 24px;
+  overflow-x: clip;
 }
 
 /* ESTILOS CARROUSEL */
+#carouselExampleFade {
+  width: 100%;
+}
 
 .carousel-sugerencias img {
   height: 70vh;
@@ -38,7 +20,6 @@
 }
 
 /* ESTILOS DE TARJETAS */
-
 .card-section-title {
   font-family: var(--font-bebas-neue);
   font-size: var(--font-size-extra-large);
@@ -48,56 +29,121 @@
   text-align: start;
   text-decoration: none;
 }
+
 .card-section-title:hover {
   color: rgb(63, 59, 59);
 }
+
 .card-img-top {
-  width: 130%;
-  height: 340px;
+  width: 130vw;
+  height: 29vh;
   object-fit: cover;
 }
 
 .card {
-  max-width: 130%;
+  max-width: 130vw;
   margin: 0;
 }
 
-#carouselContinuarViendo .carousel-control-prev {
-  left: -6%;
+/* ESTILOS CARROUSELS */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
 }
 
-#carouselContinuarViendo .carousel-control-next {
-  right: -6%;
-}
-
-#carouselPeliculas .carousel-control-prev {
-  left: -6%;
-}
-
-#carouselPeliculas .carousel-control-next {
-  right: -6%;
-}
-
-#carouselSeries .carousel-control-prev {
-  left: -6%;
-}
-
-#carouselSeries .carousel-control-next {
-  right: -6%;
-}
-
-#carouselDocumentales .carousel-control-prev {
-  left: -6%;
-}
-
-#carouselDocumentales .carousel-control-next {
-  right: -6%;
-}
-
+#carouselContinuarViendo .carousel-control-prev,
+#carouselPeliculas .carousel-control-prev,
+#carouselSeries .carousel-control-prev,
+#carouselDocumentales .carousel-control-prev,
 #carouselMisFavoritos .carousel-control-prev {
   left: -6%;
 }
 
+#carouselContinuarViendo .carousel-control-next,
+#carouselPeliculas .carousel-control-next,
+#carouselSeries .carousel-control-next,
+#carouselDocumentales .carousel-control-next,
 #carouselMisFavoritos .carousel-control-next {
   right: -6%;
+}
+
+/* MEDIA QUERIES */
+
+/* Pantallas menores a 1440px */
+@media (max-width: 1440px) {
+  .container-fluid {
+    font-size: var(--font-size-medium); /* Reducir tamaño de fuente */
+  }
+}
+
+/* Pantallas menores a 1024px */
+@media (max-width: 1024px) {
+  .container-fluid {
+    font-size: var(--font-size-small); /* Reducir tamaño de fuente */
+  }
+
+  .card-section-title {
+    font-size: var(--font-size-small); /* Reducir tamaño de fuente */
+  }
+
+  .card-img-top {
+    width: 12vw !important; /* Ajustar el ancho de las imágenes de las tarjetas */
+    height: 25vh !important; /* Ajustar la altura de las imágenes de las tarjetas */
+  }
+}
+
+/* Pantallas menores a 768px */
+@media (max-width: 768px) {
+  .card {
+    max-width: 100vw; /* Ajustar el ancho máximo de las tarjetas */
+  }
+
+  .card-img-top {
+    width: 10vw !important; /* Ajustar el ancho de las imágenes de las tarjetas */
+    height: 20vh !important; /* Ajustar la altura de las imágenes de las tarjetas */
+  }
+  .carousel-control-prev {
+    left: -3%;
+  }
+
+  .carousel-control-next {
+    right: -3%;
+  }
+}
+
+/* Pantallas menores a 425px */
+@media (max-width: 425px) {
+  #carouselExampleFade {
+    display: none;
+  }
+
+  .card-img-top {
+    width: 18vw !important; /* Ajustar el ancho de las imágenes de las tarjetas */
+    height: 22vh !important; /* Ajustar la altura de las imágenes de las tarjetas */
+    .container-fluid {
+      font-size: var(--font-size-small); /* Reducir tamaño de fuente */
+    }
+
+    .card-section-title {
+      font-size: var(--font-size-small); /* Reducir tamaño de fuente */
+    }
+  }
+}
+/* Pantallas menores a 375px */
+@media (max-width: 375px) {
+  #carouselExampleFade {
+    display: none;
+  }
+  .card-img-top {
+    width: 18vw !important; /* Ajustar el ancho de las imágenes de las tarjetas */
+    height: 22vh; /* Ajustar la altura de las imágenes de las tarjetas */
+    .container-fluid {
+      font-size: var(--font-size-small); /* Reducir tamaño de fuente */
+    }
+
+    .card-section-title {
+      font-size: var(--font-size-small); /* Reducir tamaño de fuente */
+    }
+  }
 }
