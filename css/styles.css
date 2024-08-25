@@ -82,3 +82,26 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
 }
+
+.card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--color-grey);
+  color: var(--color-white);
+  border-radius: 10px;
+}
+.card-img-top {
+  border-bottom: 1px solid var(--color-grey);
+}
+.card-title {
+  color: var(--color-white);
+}
+.card-text {
+  color: var(--color-white);
+}
+.card-deck .card {
+  margin-bottom: 20px;
+}
+.cards-container {
+  width: 90vw;
+  margin: 0 auto;
+}
