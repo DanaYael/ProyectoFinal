@@ -86,24 +86,24 @@
 /* Pantallas menores a 1024px */
 @media (max-width: 1024px) {
   .card-section-title {
-    font-size: var(--font-size-small); /* Reducir tamaño de fuente */
+    font-size: var(--font-size-small);
   }
 
   .card-img-top {
-    width: 13vw !important; /* Ajustar el ancho de las imágenes de las tarjetas */
-    height: 20vh !important; /* Ajustar la altura de las imágenes de las tarjetas */
+    width: 13vw !important;
+    height: 20vh !important;
   }
 }
 
 /* Pantallas menores a 768px */
 @media (max-width: 768px) {
   .card {
-    max-width: 10vw !important; /* Ajustar el ancho máximo de las tarjetas */
+    max-width: 10vw !important;
   }
 
   .card-img-top {
-    width: 10vw !important; /* Ajustar el ancho de las imágenes de las tarjetas */
-    height: 15vh !important; /* Ajustar la altura de las imágenes de las tarjetas */
+    width: 10vw !important;
+    height: 15vh !important;
   }
   .carousel-control-prev {
     left: -3%;
@@ -124,11 +124,11 @@
     margin-top: 40px;
   }
   .card-img-top {
-    width: 18vw !important; /* Ajustar el ancho de las imágenes de las tarjetas */
-    height: 15vh !important; /* Ajustar la altura de las imágenes de las tarjetas */
+    width: 18vw !important;
+    height: 15vh !important;
   }
   .card-section-title {
-    font-size: var(--font-size-small); /* Reducir tamaño de fuente */
+    font-size: var(--font-size-small);
   }
 }
 
@@ -143,6 +143,6 @@
   }
 
   .card-section-title {
-    font-size: var(--font-size-small); /* Reducir tamaño de fuente */
+    font-size: var(--font-size-small);
   }
 }
