@@ -3,7 +3,234 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Flixgo</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./asset/img/favicon.png"
+      type="image/x-icon"
+    />
   </head>
-  <body></body>
+  <body class="bg-dark text-white">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./asset/img/favicon.png" alt="logo" width="30px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Sobre Nosotros</a
+              >
+            </li>
+          </ul>
+          <button class="btn btn-outline-light me-2">Ingresa</button>
+          <button class="btn btn-danger">Suscribete</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección Principal -->
+    <section class="bg-principal text-center text-white">
+      <div class="container">
+        <h1 class="display-4">
+          <img src="./asset/img/logo.png" alt="logo" width="800px" />
+        </h1>
+        <h3 class="display-4">TUS PELÍCULAS Y SERIES FAVORITAS</h3>
+        <p class="lead">Los planes empiezan desde $1.999 / mes</p>
+        <button class="btn btn-lg btn-danger me-3">Suscríbete Ahora</button>
+      </div>
+    </section>
+
+    <!-- Sección de planes de suscripción -->
+    <section class="container my-5 bg-dark">
+      <h2 class="text-center mb-4">Elige tu plan</h2>
+      <div class="row">
+        <!-- Plan Básico -->
+        <div class="col-md-4 mb-4">
+          <div class="card text-center bg-dark text-white h-100">
+            <div class="card-body">
+              <h5 class="card-title">Básico</h5>
+              <div class="border border-secondary p-2 mb-2 border-opacity-25">
+                Calidad de video y audio: Buena
+              </div>
+              <div class="border border-secondary p-2 mb-2 border-opacity-25">
+                Resolución: 1080p (Full HD)
+              </div>
+              <div class="border border-secondary p-2 mb-2 border-opacity-25">
+                Anuncios: No
+              </div>
+              <div class="border border-secondary p-2 mb-2 border-opacity-25">
+                Dispositivos Compatibles: TV, computadora, tablet, móvil
+              </div>
+              <div class="border border-secondary p-2 mb-2 border-opacity-25">
+                Dispositivos en simultaneo: 2
+              </div>
+              <p class="display-6">$4.299/mes</p>
+              <a href="#" class="btn btn-danger">Mas Información</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plan Estándar -->
+        <div class="col-md-4 mb-4">
+          <div class="card text-center bg-dark text-white h-100">
+            <div class="card-body">
+              <h5 class="card-title">Estándar</h5>
+              <div class="border border-secondary p-2 mb-2 border-opacity-25">
+                Calidad de video y audio: Excelente
+              </div>
+              <div class="border border-secondary p-2 mb-2 border-opacity-25">
+                Resolución: 1080p (Full HD)
+              </div>
+              <div class="border border-secondary p-2 mb-2 border-opacity-25">
+                Anuncios: No
+              </div>
+              <div class="border border-secondary p-2 mb-2 border-opacity-25">
+                Dispositivos Compatibles: TV, computadora, tablet, móvil
+              </div>
+              <div class="border border-secondary p-2 mb-2 border-opacity-25">
+                Dispositivos en simultaneo: 3
+              </div>
+              <p class="display-6">$7.199/mes</p>
+              <a href="#" class="btn btn-danger">Mas Información</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plan Premium -->
+        <div class="col-md-4 mb-4">
+          <div class="card text-center bg-dark text-white h-100">
+            <div class="card-body">
+              <h5 class="card-title">Premium</h5>
+              <div class="border border-secondary p-2 mb-2 border-opacity-25">
+                Calidad de video y audio: Dolby Atmos
+              </div>
+              <div class="border border-secondary p-2 mb-2 border-opacity-25">
+                Resolución: 4K + HDR Dolby Digital
+              </div>
+              <div class="border border-secondary p-2 mb-2 border-opacity-25">
+                Anuncios: No
+              </div>
+              <div class="border border-secondary p-2 mb-2 border-opacity-25">
+                Dispositivos Compatibles: TV, computadora, tablet, móvil
+              </div>
+              <div class="border border-secondary p-2 mb-2 border-opacity-25">
+                Dispositivos en simultaneo: 4
+              </div>
+              <p class="display-6">$9.699/mes</p>
+              <a href="#" class="btn btn-danger">Mas Información</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-muted custom-footer">
+      <!-- Seccion para poner borde blanco -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      ></section>
+
+      <!-- izquierda  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <!-- izquierda -->
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4 text-white">
+              <h6 class="text-uppercase fw-bold mb-4 text-white">
+                <img src="./asset/img/logo.png" alt="logo" width="150px" />
+              </h6>
+              <p>¡Esperamos con ansias que te unas a la comunidad #FlixGO!</p>
+            </div>
+            <!-- medio -->
+            <div
+              class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4 text-white text-start"
+            >
+              <h6 class="text-uppercase text-start fw-bold mb-4 text-white">
+                Redes Sociales
+              </h6>
+              <p>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+              </p>
+              <p>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-twitter"></i> X
+                </a>
+              </p>
+              <p>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-instagram"></i> Instagram
+                </a>
+              </p>
+              <p>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-github"></i> Github
+                </a>
+              </p>
+            </div>
+
+            <!-- derecha -->
+            <div
+              class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4 text-white text-start"
+            >
+              <h6 class="text-uppercase fw-bold mb-4 text-white">Contacto</h6>
+              <p>
+                <i class="fas fa-home me-3"></i> Gral. José María Paz 576, T4000
+              </p>
+              <p>
+                <i class="fas fa-globe me-3"></i> San Miguel de Tucumán, Tucumán
+              </p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                support@flixgo.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> 0800-111-1111</p>
+              <p><i class="fas fa-mobile me-3"></i> 0800-222-2222</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4 text-white"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="https://tuempresa.com/">FLIXGO</a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
