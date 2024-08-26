@@ -1,0 +1,83 @@
+:root {
+  /* Fuentes */
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-bebas-neue: "Bebas Neue", sans-serif;
+
+  /* Colores */
+  --color-white: #ffffff;
+  --color-grey: #4a4a4a;
+  --bg-red: #e50914;
+  --bg-primary: #080808; /* bg de pag principal */
+  --bg-secondary: #181818; /* bg de modales , botones*/
+
+  /* Tamaños de fuente */
+  --font-size-large: 28px;
+  --font-size-medium: 24px;
+  --font-size-small: 16px;
+  --font-size-description: 14px;
+}
+
+body,
+html,
+main {
+  height: 100%;
+
+  .form-container {
+    max-width: 4700px;
+
+    .textoh2 {
+      font-family: --font-montserrat;
+      font-weight: bold;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .textoh5 {
+      font-family: var(--font-bebas-neue);
+    }
+
+    .btn-red {
+      background: var(--bg-red);
+      color: var(--color-white);
+      font-family: var(--font-roboto);
+      padding: 10px 80px;
+      transition: 0.2s all ease-in-out;
+
+      &.btn-red:hover {
+        background-color: var(--bg-secondary);
+        color: var(--bg-red);
+      }
+    }
+
+    input,
+    textarea {
+      border: 2px solid #ccc; /* Borde ligero */
+      padding: 10px;
+      border-radius: 5px; /* Borde redondeado */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Sombra */
+      transition: box-shadow 0.3s ease, border-color 0.3s ease;
+
+      &:focus {
+        border-color: #007bffa2; /* Cambio de color en el borde al hacer foco */
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.8); /* Sombra más intensa al hacer foco */
+        outline: none; /* Elimina el borde de enfoque predeterminado */
+      }
+    }
+  }
+  .div-icons {
+    color: #e50914;
+  }
+}
+
+.btn-contacto {
+  background-color: beige;
+  border: 1px solid grey;
+  height: 80px;
+  width: 200px;
+  transition: 0.2s all ease-in-out;
+
+  &:hover {
+    background-color: rgba(145, 142, 142, 0.606);
+  }
+}
