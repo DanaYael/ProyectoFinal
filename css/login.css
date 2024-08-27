@@ -80,9 +80,24 @@ html {
     }
   }
 
-  .form-floating {
+  #tarjetaCreditoModal .card-title-modal {
+    font-family: --font-montserrat;
+    font-weight: bold;
+    text-align: center;
     color: black;
   }
+
+  .modal {
+    font-family: --font-montserrat;
+    text-align: center;
+    color: black;
+  }
+
+  .form-floating {
+    color: black;
+    font-family: sans-serif;
+  }
+
   .icon-formulario {
     color: var(--bg-red);
     font-size: 16px;
@@ -98,7 +113,7 @@ html {
     background: var(--bg-red);
     color: var(--color-white);
     font-family: var(--font-roboto);
-    padding: 10px 80px;
+    padding: 10px 70px;
     transition: 0.2s all ease-in-out;
 
     &.btn-red:hover {
@@ -174,6 +189,19 @@ html {
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 20px 0px var(--color-grey);
+  }
+}
+
+.container-pago .btn-iniciar-sesion {
+  background: var(--bg-primary);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+  padding: 10px 70px;
+  text-decoration: none;
+
+  &.btn-iniciar-sesion:hover {
+    background-color: var(--color-grey);
+    color: var(--bg-red);
   }
 }
 

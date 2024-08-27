@@ -34,6 +34,7 @@
       background-color: rgba(128, 128, 128, 0.5);
     }
   }
+
   .btn-red {
     background: var(--bg-red);
     color: var(--color-white);
@@ -63,4 +64,8 @@
       background-color: #080808;
     }
   }
+}
+
+.form-floating {
+  color: white;
 }
