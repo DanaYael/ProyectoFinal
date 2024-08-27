@@ -1,0 +1,129 @@
+:root {
+  /* Fuentes */
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-bebas-neue: "Bebas Neue", sans-serif;
+
+  /* Colores */
+  --color-white: #ffffff;
+  --color-grey: #4a4a4a;
+  --bg-red: #e50914;
+  --bg-primary: #080808; /* bg de pag principal */
+  --bg-secondary: #181818; /* bg de modales , botones*/
+
+  /* Tamaños de fuente */
+  --font-size-large: 28px;
+  --font-size-medium: 24px;
+  --font-size-small: 16px;
+  --font-size-description: 14px;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+}
+
+/* Box del Título */
+.title-container {
+  margin: 20px;
+}
+
+/* Texto del Título */
+.title-container h1 {
+  font: var(--font-bebas-neue);
+  font-size: var(--font-size-large);
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+}
+
+/* Box del Carousel */
+.carousel-container {
+  width: 70vw;
+  height: 30vh;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-item a {
+  font: var(--font-montserrat);
+  font-size: var(--font-size-medium);
+  text-decoration: none;
+  color: inherit;
+  background: none;
+}
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.carousel-caption {
+  font: var(--font-roboto);
+  font-size: var(--font-size-small);
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 70%;
+  color: var(--color-white);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--color-grey);
+  color: var(--color-white);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s all ease-in;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-img-top {
+  border-bottom: 1px solid var(--color-grey);
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.card-img-top .card-title {
+  color: var(--color-white);
+}
+.card-text {
+  color: var(--color-white);
+}
+.card-deck .card {
+  margin-bottom: 20px;
+}
+.cards-container {
+  width: 90vw;
+  margin: 0 auto;
+}
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--color-white);
+  padding: 10px;
+  box-sizing: border-box;
+}
