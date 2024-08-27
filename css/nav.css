@@ -1,0 +1,126 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background Customization */
+.bg-personalizado {
+  background-color: #333333;
+}
+
+/* Navbar Styles */
+.navbar {
+  align-items: center;
+  width: 100%;
+}
+
+.navbar.fixed-top {
+  z-index: 1030;
+}
+
+.navbar-brand {
+  margin-left: 30px;
+}
+
+/* Navigation Link Styles */
+.nav-item {
+  list-style: none;
+}
+
+.nav-item .nav-link {
+  color: aliceblue;
+  padding: 0 10px;
+  font-family: var(--font-montserrat);
+  font-size: var(--font-size-medium);
+}
+
+/* Container Styles */
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Search Bar Styles */
+.buscar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.buscar .input-group .input-group-text {
+  padding: 15px 25px;
+  font-size: 24px;
+}
+
+/* Dropdown Styles */
+.dropdown .nav-link {
+  display: flex;
+  align-items: center;
+}
+
+/* Media Queries */
+
+/*1440px and below*/
+@media (max-width: 1440px) {
+  .container-fluid {
+    width: 1440px !important;
+    margin: 0 !important;
+  }
+}
+
+/* 1024px and below */
+@media (max-width: 1024px) {
+  .container-fluid {
+    width: 1024px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: var(--font-size-small);
+  }
+
+  .navbar .nav-item .nav-link {
+    font-size: var(--font-size-small);
+    padding: 2px !important;
+  }
+
+  .buscar {
+    width: 30vw !important;
+    padding: 2px !important;
+    font-size: var(--font-size-description) !important;
+  }
+
+  .input-group-text {
+    width: 0.5w !important;
+    padding: 2px !important;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  .container-fluid {
+    width: 768px !important;
+  }
+}
+
+/* 425px and below */
+@media (max-width: 425px) {
+  .container-fluid {
+    width: 425px !important;
+  }
+}
+
+/* Pantallas menores a 375px */
+@media (max-width: 375px) {
+  .container-fluid {
+    width: 375px !important;
+  }
+}
+
+/* Pantallas menores a 320px */
+@media (max-width: 320px) {
+  .container-fluid {
+    width: 320px !important;
+  }
+}

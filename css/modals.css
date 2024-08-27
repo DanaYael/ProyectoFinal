@@ -1,0 +1,33 @@
+/* ESTILOS MODALES */
+.background-modal {
+  background-color: var(--bg-secondary);
+  color: white;
+}
+
+.modal-title {
+  font-family: var(--font-montserrat);
+  text-align: center;
+  width: 100%;
+}
+
+.modal-description {
+  font-family: var(--font-roboto);
+  font-size: 1.5rem;
+}
+
+.film-details h6 {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.btn-modal {
+  width: 100%;
+  border: none;
+  background-color: var(--bg-secondary);
+  font-family: var(--font-bebas-neue);
+  font-size: 1.5rem;
+  color: white;
+}
+.btn-modal:hover {
+  color: grey;
+}

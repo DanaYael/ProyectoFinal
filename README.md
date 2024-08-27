@@ -1,6 +1,6 @@
 DESCRIPCIÓN DEL PROYECTO
 
-FlixGo es una plataforma de streaming de video que permite a los usuarios ver series, películas y documentales desde cualquier dispositivo con conexión a internet. Inspirado en Netflix, este proyecto está diseñado para ofrecer una experiencia de usuario fluida y atractiva, con recomendaciones personalizadas, listas de favoritos y mucho más.
+FlixGo es una plataforma de streaming de video que permite a los usuarios ver series, películas y documentales desde cualquier dispositivo con conexión a internet. Inspirado en Netflix, este proyecto está diseñado para ofrecer una experiencia de usuario fluída y atractiva, con recomendaciones personalizadas, listas de favoritos y mucho más.
 
 CARACTERÍSTICAS
 
