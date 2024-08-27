@@ -1,75 +1,87 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Nunito", sans-serif;
-    
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
 }
+
 .bg-personalizado {
-    background-color: #333333;
-    padding: 20px 0;
-}
-.bg-personalizado h4 {
-    color: antiquewhite;
+  background-color: #333333;
+  padding: 20px 0;
+
+  h4 {
+    color: white;
     margin-bottom: 15px;
-}
-.bg-personalizado a {
-    color: antiquewhite;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  a {
+    color: white;
     text-decoration: none;
     list-style: none;
-}
-.bg-personalizado .grupo-2{
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  .grupo-2 {
     background-color: #333;
     margin-top: 35px;
     text-align: center;
-    color: #b4b4b4;
+    color: white;
+
+    small {
+      font-size: 15px;
+    }
+  }
+
+  .col-md-3 {
+    margin-bottom: 20px;
+  }
 }
-.bg-personalizado .grupo-2 small{
-    font-size: 15px;
-}
-.list-unstyled li{
+
+.list-unstyled {
+  li {
     font-size: 15px;
     margin-bottom: 10px;
-}
-.list-unstyled li a{
-    color: #8d8d8d;
+
+    a {
+      color: white;
+    }
+  }
 }
 
-/* .bg-personalizado a:hover {
-    text-decoration: underline;
-} */
+.info {
+  font-size: 20px;
 
-.info{
-    font-size: 20px;
-    
-}
-.info-espesial{
+  &-espesial {
     list-style: none;
     margin-top: 50px;
-}
-.info-espesial a{
-    color: #b4b4b4;
+  }
 }
 
-.social-icons a {
-    color: beige;
+.social-icons {
+  a {
+    color: white;
+    border: 0.8px solid white;
     border-radius: 50%;
+    padding: 12px;
     font-size: 1.7rem;
     margin-right: 15px;
     margin: 10px;
-}
 
-
-.social-icons a:hover {
-    color: #ff0000;
-    text-decoration: none;
-}
-
-    
-.bg-personalizado .col-md-3 {
-    margin-bottom: 20px;
-}
-@media (max-width: 767.98px){
-    .social-icons {
-        text-align: center;
+    &:hover {
+      color: #ff0000;
+      text-decoration: none;
+      border: 0.5px solid black;
+      border-radius: 50%;
     }
- }
+  }
+
+  @media (max-width: 767.98px) {
+    text-align: center;
+  }
+}
