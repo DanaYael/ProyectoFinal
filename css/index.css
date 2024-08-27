@@ -64,7 +64,3 @@
     }
   }
 }
-
-.modal {
-  z-index: 1050; /* Asegúrate de que este valor sea suficientemente alto */
-}
