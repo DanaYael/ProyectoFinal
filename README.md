@@ -17,11 +17,13 @@ CSS
 Git
 GitHub
 Kanban
+
 CLONACIÓN DEL REPOSITORIO
 
 bash
 Copiar código
 git clone https://github.com/tuusuario/flixGo.git
+
 USO
 
 Regístrate y crea un perfil.
