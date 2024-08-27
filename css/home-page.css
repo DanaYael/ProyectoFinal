@@ -1,0 +1,148 @@
+/* ESTILOS GENERALES */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body-home-page {
+  background-color: var(--bg-primary);
+  overflow-x: clip;
+}
+
+/* ESTILOS CARROUSEL */
+#carouselExampleFade {
+  width: 100%;
+}
+
+.carousel-sugerencias img {
+  height: 65vh;
+  object-fit: cover;
+}
+
+/* ESTILOS DE TARJETAS */
+
+.first-title {
+  margin-top: 10px;
+}
+.card-section-title {
+  font-family: var(--font-bebas-neue);
+  font-size: var(--font-size-extra-large);
+  font-weight: 500;
+  color: var(--color-white);
+  margin: 10px;
+  text-align: start;
+  text-decoration: none;
+}
+
+.card-section-title:hover {
+  color: rgb(63, 59, 59);
+}
+
+.card-img-top {
+  width: 130vw;
+  height: 20vh;
+  object-fit: cover;
+}
+
+.card {
+  max-width: 130vw;
+  margin: 0;
+}
+
+/* ESTILOS CARROUSELS */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+}
+
+#carouselContinuarViendo .carousel-control-prev,
+#carouselPeliculas .carousel-control-prev,
+#carouselSeries .carousel-control-prev,
+#carouselDocumentales .carousel-control-prev,
+#carouselMisFavoritos .carousel-control-prev {
+  left: -6%;
+}
+
+#carouselContinuarViendo .carousel-control-next,
+#carouselPeliculas .carousel-control-next,
+#carouselSeries .carousel-control-next,
+#carouselDocumentales .carousel-control-next,
+#carouselMisFavoritos .carousel-control-next {
+  right: -6%;
+}
+
+/* MEDIA QUERIES */
+
+/* Pantallas menores a 1440px */
+@media (max-width: 1440px) {
+  .card-img-top {
+    width: 15vw !important;
+    height: 19vh !important;
+    object-fit: cover;
+  }
+}
+
+/* Pantallas menores a 1024px */
+@media (max-width: 1024px) {
+  .card-section-title {
+    font-size: var(--font-size-small);
+  }
+
+  .card-img-top {
+    width: 13vw !important;
+    height: 20vh !important;
+  }
+}
+
+/* Pantallas menores a 768px */
+@media (max-width: 768px) {
+  .card {
+    max-width: 10vw !important;
+  }
+
+  .card-img-top {
+    width: 10vw !important;
+    height: 15vh !important;
+  }
+  .carousel-control-prev {
+    left: -3%;
+  }
+
+  .carousel-control-next {
+    right: -3%;
+  }
+}
+
+/* Pantallas menores a 425px */
+@media (max-width: 425px) {
+  #carouselExampleFade {
+    display: none;
+  }
+
+  .first-title {
+    margin-top: 40px;
+  }
+  .card-img-top {
+    width: 18vw !important;
+    height: 15vh !important;
+  }
+  .card-section-title {
+    font-size: var(--font-size-small);
+  }
+}
+
+/* Pantallas menores a 320px */
+@media (max-width: 320px) {
+  #carouselExampleFade {
+    display: none;
+  }
+  .card-img-top {
+    width: 22vw !important;
+    height: 15vh !important;
+  }
+
+  .card-section-title {
+    font-size: var(--font-size-small);
+  }
+}
