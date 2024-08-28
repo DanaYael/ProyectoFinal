@@ -52,6 +52,11 @@ img.card-img-top {
   border: unset !important;
 }
 
+#navbarNavDropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
 /* ESTILOS CARROUSELS */
 .carousel-control-prev,
 .carousel-control-next {
