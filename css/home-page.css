@@ -121,25 +121,6 @@ img.card-img-top {
   }
 }
 
-/* Pantallas entre 420px y 700px */
-@media (min-width: 420px) and (max-width: 700px) {
-  .card {
-    margin-bottom: 20px; /* Espacio vertical entre tarjetas */
-  }
-
-  .card-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px !important; /* Espacio horizontal entre tarjetas */
-  }
-
-  img.card-img-top {
-    width: 80px;
-    height: 130px;
-    object-fit: cover;
-  }
-}
-
 /* Pantallas menores a 425px */
 @media (max-width: 425px) {
   #carouselExampleFade {
@@ -147,7 +128,13 @@ img.card-img-top {
   }
 
   .first-title {
-    margin-top: 40px;
+    margin-top: 20px;
+  }
+
+  .carousel-item .d-flex {
+    width: 400px;
+    height: 120px;
+    justify-content: space-between;
   }
 
   img.card-img-top {
@@ -160,7 +147,6 @@ img.card-img-top {
     font-size: 18px;
   }
 }
-
 /* Pantallas menores a 320px */
 @media (max-width: 320px) {
   #carouselExampleFade {
