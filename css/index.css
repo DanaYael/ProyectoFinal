@@ -32,11 +32,12 @@
   .color-input {
     background-color: rgba(128, 128, 128, 0.5);
     border: 1px solid #ccc;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-
+    transition: background-color 0.3s ease, border-color 0.3s ease; */
+    color: white;
+    
     .form-control:focus {
       background-color: rgba(128, 128, 128, 0.5);
-    }
+    } 
   }
 
   .btn-red {
