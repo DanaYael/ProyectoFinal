@@ -48,7 +48,8 @@ img.card-img-top {
 .card {
   max-width: 100%;
   margin: 0;
-  border: none !important;
+  background-color: unset !important;
+  border: unset !important;
 }
 
 /* ESTILOS CARROUSELS */
