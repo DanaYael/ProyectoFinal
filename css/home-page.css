@@ -14,11 +14,6 @@
   width: 100%;
 }
 
-.carousel-sugerencias img {
-  height: 65vh;
-  object-fit: cover;
-}
-
 /* ESTILOS DE TARJETAS */
 
 .first-title {
@@ -58,29 +53,50 @@ img.card-img-top {
 }
 
 /* ESTILOS CARROUSELS */
-.carousel-control-prev,
-.carousel-control-next {
+
+.carousel-item {
+  position: relative;
+}
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-control-prev {
+  display: none !important;
+}
+
+span.carousel-control-next-icon {
+  background-color: transparent;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  height: 50px;
+}
+
+.carousel-control-next .carousel-control-prev {
+  width: none;
+}
+
+span.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+  height: 130px;
+}
+
+.carousel-item .boton-reproducir {
   position: absolute;
-  top: 50%;
+  top: 350px;
+  left: 70px;
+  z-index: 10; /* Asegura que el botón esté encima de la imagen */
+  background-color: #ff0000;
+  border: none;
+  margin: 60px;
+  padding: 10px 60px;
 }
 
-#carouselContinuarViendo .carousel-control-prev,
-#carouselPeliculas .carousel-control-prev,
-#carouselSeries .carousel-control-prev,
-#carouselDocumentales .carousel-control-prev,
-#carouselMisFavoritos .carousel-control-prev {
-  left: -50px;
+.carousel-item .boton-reproducir:hover {
+  background-color: gray;
+  transition: 0.2s all ease-in;
+  border-color: none;
 }
-
-#carouselContinuarViendo .carousel-control-next,
-#carouselPeliculas .carousel-control-next,
-#carouselSeries .carousel-control-next,
-#carouselDocumentales .carousel-control-next,
-#carouselMisFavoritos .carousel-control-next {
-  right: -50px;
-}
-
-/* MEDIA QUERIES */
 
 /* Pantallas menores a 1440px */
 @media (max-width: 1440px) {
@@ -111,13 +127,19 @@ img.card-img-top {
     height: 150px;
     object-fit: cover;
   }
+}
 
-  .carousel-control-prev {
-    left: -30px;
+@media (max-width: 600px) {
+  .modal-dialog .modal-content {
+    width: 80%;
   }
 
-  .carousel-control-next {
-    right: -30px;
+  .modal-content .modal-description {
+    font-size: 15px;
+  }
+
+  .main-home-page .film-details h6 {
+    font-size: 15px;
   }
 }
 
