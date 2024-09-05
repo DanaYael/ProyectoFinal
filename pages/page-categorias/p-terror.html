@@ -4,11 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peliculas: Terror</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/home-page.css" />
+    <link rel="stylesheet" href="../css/modals.css" />
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/styles-categorias.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/css/styles-categorias.css" />
     <style>
       /* Fuentes para títulos de página principal */
       @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gupter:wght@400;500;700&family=Montserrat:ital,wght@0,600;1,600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+PE:wght@100..400&family=Rubik+Dirt&display=swap");
@@ -19,6 +36,168 @@
     </style>
   </head>
   <body>
+    <header>
+      <!-- INICIO NAVBAR -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!-- Logo a la izquierda -->
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="/asset/img/logo.png"
+              alt="Logo Izquierdo"
+              width="150"
+              class="d-inline-block align-top"
+            />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto d-none d-lg-flex">
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/home-page.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error404.html">Películas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error404.html">Series</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error404.html">Documentales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error404.html"
+                  >Mis Favoritos</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorías
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="p-accion.html">Acción</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="p-aventura.html">Aventura</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="p-sci-fi.html"
+                      >Ciencia Ficción</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="p-terror.html">Terror</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="p-drama.html">Drama</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="p-comedia.html">Comedia</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Barra de búsqueda y perfil a la derecha -->
+          <div class="d-flex align-items-center">
+            <form class="d-flex me-3 d-none d-lg-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Buscar
+              </button>
+            </form>
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="/asset/img/avatar1.png"
+                  alt="Perfil"
+                  width="40"
+                  height="40"
+                  class=""
+                />
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="dropdownMenuButton"
+              >
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      class="img me-2"
+                      src="/asset/img/avatar1.png"
+                      alt="perfil 1"
+                      width="25"
+                      height="25"
+                    />Juan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      class="img me-2"
+                      src="/asset/img/avatar2.png"
+                      alt="perfil 2"
+                      width="25"
+                      height="25"
+                    />Maria</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      class="img me-2"
+                      src="/asset/img/avatar3.jpg"
+                      alt="kids"
+                      width="25"
+                      height="25"
+                    />Kids</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-pencil me-2"></i>Administrar Perfiles</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-gear me-2"></i>Cuenta</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="././pages/inicio-sesion.html"
+                    >Cerrar sesión en FlixGO</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- Título -->
     <div class="title-container text-center my-5">
       <h1>Películas: Terror</h1>
@@ -40,7 +219,11 @@
             <div class="carousel-caption d-none d-md-block">
               <a href=""><h5>Psicosis</h5></a>
               <p>
-                Un thriller psicológico que narra la historia de Marion Crane, quien, tras robar una gran suma de dinero, se refugia en un solitario motel dirigido por el enigmático Norman Bates. La película es famosa por su icónica escena de la ducha y es considerada una obra maestra del suspense y el terror.
+                Un thriller psicológico que narra la historia de Marion Crane,
+                quien, tras robar una gran suma de dinero, se refugia en un
+                solitario motel dirigido por el enigmático Norman Bates. La
+                película es famosa por su icónica escena de la ducha y es
+                considerada una obra maestra del suspense y el terror.
               </p>
             </div>
           </div>
@@ -53,7 +236,11 @@
             <div class="carousel-caption d-none d-md-block">
               <a href=""><h5>El silencio de los inocentes</h5></a>
               <p>
-                Un thriller psicológico en el que la joven agente del FBI, Clarice Starling, busca la ayuda del encarcelado asesino en serie Dr. Hannibal Lecter para capturar a otro asesino en serie conocido como "Buffalo Bill". La película es conocida por sus intensas actuaciones y su exploración de la psicología criminal.
+                Un thriller psicológico en el que la joven agente del FBI,
+                Clarice Starling, busca la ayuda del encarcelado asesino en
+                serie Dr. Hannibal Lecter para capturar a otro asesino en serie
+                conocido como "Buffalo Bill". La película es conocida por sus
+                intensas actuaciones y su exploración de la psicología criminal.
               </p>
             </div>
           </div>
@@ -66,7 +253,11 @@
             <div class="carousel-caption d-none d-md-block">
               <a href=""><h5>Fenómenos</h5></a>
               <p>
-                Un drama de terror y ciencia ficción que se centra en un grupo de "fenómenos" (o "freaks") en un circo que buscan venganza contra una mujer que ha traicionado a su compañero. La película es notable por su representación de personajes con deformidades físicas y su exploración de temas de aceptación y venganza.
+                Un drama de terror y ciencia ficción que se centra en un grupo
+                de "fenómenos" (o "freaks") en un circo que buscan venganza
+                contra una mujer que ha traicionado a su compañero. La película
+                es notable por su representación de personajes con deformidades
+                físicas y su exploración de temas de aceptación y venganza.
               </p>
             </div>
           </div>
@@ -106,6 +297,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">Psicosis</h5>
                 <p class="card-text">1960</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -121,6 +315,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">El silencio de los inocentes</h5>
                 <p class="card-text">1991</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -136,6 +333,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">Fenómenos</h5>
                 <p class="card-text">1932</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -151,6 +351,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">El resplandor</h5>
                 <p class="card-text">1980</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -181,6 +384,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">Fausto</h5>
                 <p class="card-text">1926</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -196,6 +402,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">Alien, el octavo pasajero</h5>
                 <p class="card-text">1979</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -211,6 +420,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">Las diabólicas</h5>
                 <p class="card-text">1955</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -226,6 +438,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">Nosferatu</h5>
                 <p class="card-text">1922</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -241,6 +456,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">Los pájaros</h5>
                 <p class="card-text">1963</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -256,6 +474,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">El bebé de Rosemary</h5>
                 <p class="card-text">1968</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -271,16 +492,24 @@
               <div class="card-overlay">
                 <h5 class="card-title">El hombre sin brazos</h5>
                 <p class="card-text">1927</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
         </div>
       </div>
     </div>
-    
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/658942d6b0.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

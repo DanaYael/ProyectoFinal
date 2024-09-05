@@ -85,7 +85,7 @@ span.carousel-control-next-icon:hover {
   position: absolute;
   top: 350px;
   left: 70px;
-  z-index: 10; /* Asegura que el botón esté encima de la imagen */
+  z-index: 10;
   background-color: #ff0000;
   border: none;
   margin: 60px;
@@ -146,13 +146,13 @@ span.carousel-control-next-icon:hover {
 /* Pantallas entre 420px y 700px */
 @media (min-width: 420px) and (max-width: 700px) {
   .card {
-    margin-bottom: 20px; /* Espacio vertical entre tarjetas */
+    margin-bottom: 20px;
   }
 
   .card-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px !important; /* Espacio horizontal entre tarjetas */
+    gap: 20px !important;
   }
 
   img.card-img-top {

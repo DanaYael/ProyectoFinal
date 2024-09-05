@@ -4,11 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peliculas: Accion</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/home-page.css" />
+
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/styles-categorias.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/css/styles-categorias.css" />
     <style>
       /* Fuentes para títulos de página principal */
       @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gupter:wght@400;500;700&family=Montserrat:ital,wght@0,600;1,600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+PE:wght@100..400&family=Rubik+Dirt&display=swap");
@@ -19,6 +36,168 @@
     </style>
   </head>
   <body>
+    <header>
+      <!-- INICIO NAVBAR -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!-- Logo a la izquierda -->
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="/asset/img/logo.png"
+              alt="Logo Izquierdo"
+              width="150"
+              class="d-inline-block align-top"
+            />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto d-none d-lg-flex">
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/home-page.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error404.html">Películas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error404.html">Series</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error404.html">Documentales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/error404.html"
+                  >Mis Favoritos</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorías
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="p-accion.html">Acción</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="p-aventura.html">Aventura</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="p-sci-fi.html"
+                      >Ciencia Ficción</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="p-terror.html">Terror</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="p-drama.html">Drama</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="p-comedia.html">Comedia</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Barra de búsqueda y perfil a la derecha -->
+          <div class="d-flex align-items-center">
+            <form class="d-flex me-3 d-none d-lg-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Buscar
+              </button>
+            </form>
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="/asset/img/avatar1.png"
+                  alt="Perfil"
+                  width="40"
+                  height="40"
+                  class=""
+                />
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="dropdownMenuButton"
+              >
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      class="img me-2"
+                      src="/asset/img/avatar1.png"
+                      alt="perfil 1"
+                      width="25"
+                      height="25"
+                    />Juan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      class="img me-2"
+                      src="/asset/img/avatar2.png"
+                      alt="perfil 2"
+                      width="25"
+                      height="25"
+                    />Maria</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      class="img me-2"
+                      src="/asset/img/avatar3.jpg"
+                      alt="kids"
+                      width="25"
+                      height="25"
+                    />Kids</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-pencil me-2"></i>Administrar Perfiles</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-gear me-2"></i>Cuenta</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="././pages/inicio-sesion.html"
+                    >Cerrar sesión en FlixGO</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- Título -->
     <div class="title-container text-center my-5">
       <h1>Películas: Acción</h1>
@@ -40,7 +219,11 @@
             <div class="carousel-caption d-none d-md-block">
               <a href=""><h5>Ciudad de Dios</h5></a>
               <p>
-                Una historia épica sobre la vida en las favelas de Río de Janeiro, narrada a través de dos jóvenes que siguen caminos opuestos en un ambiente de violencia y crimen. La película es conocida por su intensa representación del tráfico de drogas y su innovador estilo visual.
+                Una historia épica sobre la vida en las favelas de Río de
+                Janeiro, narrada a través de dos jóvenes que siguen caminos
+                opuestos en un ambiente de violencia y crimen. La película es
+                conocida por su intensa representación del tráfico de drogas y
+                su innovador estilo visual.
               </p>
             </div>
           </div>
@@ -51,9 +234,14 @@
               alt="Slide 2"
             />
             <div class="carousel-caption d-none d-md-block">
-              <a href=""><h5>El señor de los anillos: El retorno del rey</h5></a>
+              <a href=""
+                ><h5>El señor de los anillos: El retorno del rey</h5></a
+              >
               <p>
-                El cierre épico de la trilogía "El Señor de los Anillos", donde los héroes de la Tierra Media se enfrentan a la última batalla contra el malvado Sauron. La película es aclamada por sus impresionantes efectos visuales y su épico final.
+                El cierre épico de la trilogía "El Señor de los Anillos", donde
+                los héroes de la Tierra Media se enfrentan a la última batalla
+                contra el malvado Sauron. La película es aclamada por sus
+                impresionantes efectos visuales y su épico final.
               </p>
             </div>
           </div>
@@ -66,7 +254,10 @@
             <div class="carousel-caption d-none d-md-block">
               <a href=""><h5>Perros de la calle</h5></a>
               <p>
-                Un thriller de crimen que sigue a un grupo de delincuentes que se reúnen para llevar a cabo un gran robo, solo para descubrir que uno de ellos es un traidor. La película es conocida por su estructura narrativa no lineal y el enfoque en el diálogo.
+                Un thriller de crimen que sigue a un grupo de delincuentes que
+                se reúnen para llevar a cabo un gran robo, solo para descubrir
+                que uno de ellos es un traidor. La película es conocida por su
+                estructura narrativa no lineal y el enfoque en el diálogo.
               </p>
             </div>
           </div>
@@ -106,6 +297,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">Ciudad de Dios</h5>
                 <p class="card-text">2002</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -119,8 +313,13 @@
                 alt="El señor de los anillos: El retorno del rey (2003)"
               />
               <div class="card-overlay">
-                <h5 class="card-title">El señor de los anillos: El retorno del rey</h5>
+                <h5 class="card-title">
+                  El señor de los anillos: El retorno del rey
+                </h5>
                 <p class="card-text">2003</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -136,6 +335,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">Perros de la calle</h5>
                 <p class="card-text">1992</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -151,6 +353,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">Batman: El caballero de la noche</h5>
                 <p class="card-text">2008</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -166,6 +371,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">Blade Runner</h5>
                 <p class="card-text">1982</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -181,6 +389,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">Yojimbo</h5>
                 <p class="card-text">1961</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -194,8 +405,13 @@
                 alt="El señor de los anillos: La comunidad del anillo (2001)"
               />
               <div class="card-overlay">
-                <h5 class="card-title">El señor de los anillos: La comunidad del anillo</h5>
+                <h5 class="card-title">
+                  El señor de los anillos: La comunidad del anillo
+                </h5>
                 <p class="card-text">2001</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -209,8 +425,13 @@
                 alt="El señor de los anillos: Las dos torres (2002)"
               />
               <div class="card-overlay">
-                <h5 class="card-title">El señor de los anillos: Las dos torres</h5>
+                <h5 class="card-title">
+                  El señor de los anillos: Las dos torres
+                </h5>
                 <p class="card-text">2002</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -226,6 +447,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">El origen</h5>
                 <p class="card-text">2010</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -241,6 +465,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">Espartaco</h5>
                 <p class="card-text">1960</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -256,6 +483,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">Matrix</h5>
                 <p class="card-text">1999</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -271,6 +501,9 @@
               <div class="card-overlay">
                 <h5 class="card-title">Gladiador</h5>
                 <p class="card-text">2000</p>
+                <div>
+                  <i class="bi bi-play-btn icono-play"></i>
+                </div>
               </div>
             </div>
           </a>
@@ -278,8 +511,14 @@
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/658942d6b0.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
