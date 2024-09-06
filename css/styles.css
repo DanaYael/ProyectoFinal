@@ -1,6 +1,6 @@
 /* Adaptación del CSS personalizado */
 .bg-principal {
-  background-image: url("../asset/img/banner.png");
+  background-image: url("../asset/img/general/banner.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
