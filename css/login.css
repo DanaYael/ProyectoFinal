@@ -8,8 +8,8 @@
   --color-white: #ffffff;
   --color-grey: #4a4a4a;
   --bg-red: #e50914;
-  --bg-primary: #080808; /* bg de pag principal */
-  --bg-secondary: #181818; /* bg de modales , botones*/
+  --bg-primary: #080808;
+  --bg-secondary: #181818;
 
   /* Tamaños de fuente */
   --font-size-large: 28px;
@@ -65,16 +65,15 @@ html {
 
     .formulario .input-estilo {
       input {
-        border: 2px solid #ccc; /* Borde ligero */
-        padding: 10px;
-        border-radius: 5px; /* Borde redondeado */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Sombra */
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
         transition: box-shadow 0.3s ease, border-color 0.3s ease;
 
         &:focus {
-          border-color: #007bffa2; /* Cambio de color en el borde al hacer foco */
-          box-shadow: 0 0 8px rgba(0, 123, 255, 0.8); /* Sombra más intensa al hacer foco */
-          outline: none; /* Elimina el borde de enfoque predeterminado */
+          border-color: #007bffa2;
+          box-shadow: 0 0 8px rgba(0, 123, 255, 0.8);
+          outline: none;
         }
       }
     }
